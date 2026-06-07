@@ -15,11 +15,11 @@ import { Footer } from "@/components/observatory/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dubai AI Economy Readiness Observatory — Dubai Chamber of Digital Economy" },
+      { title: "When ambition meets infrastructure — Dubai AI Economy Readiness Observatory" },
       {
         name: "description",
         content:
-          "A living, evidence-backed assessment of Dubai's readiness to scale artificial intelligence across sectors, infrastructure, talent, governance, and capital. Published by Dubai Chamber of Digital Economy.",
+          "Edition 01 of the Dubai AI Economy Readiness Observatory: a living, evidence-backed assessment of Dubai's readiness to scale AI across sectors, infrastructure, talent, governance, and capital.",
       },
       { property: "og:title", content: "Dubai AI Economy Readiness Observatory" },
       {

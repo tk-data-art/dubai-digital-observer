@@ -1,100 +1,88 @@
-const peers = [
-  { city: "Singapore", policy: 92, startup: 88, talent: 90, infra: 89, gba: 94, dubai: false },
-  { city: "London", policy: 86, startup: 94, talent: 95, infra: 87, gba: 91, dubai: false },
-  { city: "Dubai", policy: 84, startup: 76, talent: 68, infra: 78, gba: 90, dubai: true },
-  { city: "Abu Dhabi", policy: 82, startup: 70, talent: 72, infra: 85, gba: 80, dubai: false },
-  { city: "Tel Aviv", policy: 78, startup: 93, talent: 91, infra: 75, gba: 79, dubai: false },
-  { city: "Riyadh", policy: 80, startup: 72, talent: 66, infra: 80, gba: 78, dubai: false },
-  { city: "Bangalore", policy: 70, startup: 89, talent: 92, infra: 70, gba: 74, dubai: false },
-];
-
-const cols: { key: keyof (typeof peers)[number]; label: string }[] = [
-  { key: "policy", label: "Policy clarity" },
-  { key: "startup", label: "Startup intensity" },
-  { key: "talent", label: "Talent concentration" },
-  { key: "infra", label: "Digital infrastructure" },
-  { key: "gba", label: "Global business attractiveness" },
-];
-
-function Cell({ value, highlight }: { value: number; highlight: boolean }) {
-  return (
-    <td className="py-4 px-4 align-middle">
-      <div className="flex items-center gap-3">
-        <span
-          className={`font-mono tabular-nums text-sm w-10 ${highlight ? "text-ink font-semibold" : "text-ink/70"}`}
-        >
-          {value}
-        </span>
-        <div className="flex-1 h-1 bg-ink/10 relative">
-          <div
-            className={`absolute inset-y-0 left-0 ${highlight ? "bg-teal-deep" : "bg-ink/40"}`}
-            style={{ width: `${value}%` }}
-          />
-        </div>
-      </div>
-    </td>
-  );
-}
+import { ExhibitFrame, UnitBar } from "./Exhibits";
 
 export function Benchmark() {
-  return (
-    <section id="benchmark" className="py-24 lg:py-32 border-t border-ink/10">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-        <div className="grid lg:grid-cols-12 gap-10 mb-12">
-          <div className="lg:col-span-6">
-            <span className="eyebrow text-teal-deep">Chapter 05 · Benchmark</span>
-            <h2 className="font-serif text-4xl lg:text-5xl mt-3 leading-[1.05] text-ink">
-              Readiness is relative,
-              <br />
-              <span className="italic">not absolute.</span>
-            </h2>
-          </div>
-          <p className="lg:col-span-5 lg:col-start-8 text-lg text-ink/70 self-end leading-relaxed">
-            Comparison with six peer ecosystems where source methods are comparable.
-            Where methods diverge, the cell is shown blank rather than estimated.
-          </p>
-        </div>
+  const peers = [
+    { city: "Singapore",     foundations: 82, adoption: 74, velocity: 68, stewardship: 71, overall: 74 },
+    { city: "Dubai",         foundations: 76, adoption: 68, velocity: 81, stewardship: 52, overall: 69 },
+    { city: "London",        foundations: 79, adoption: 72, velocity: 58, stewardship: 76, overall: 71 },
+    { city: "San Francisco", foundations: 88, adoption: 82, velocity: 75, stewardship: 61, overall: 77 },
+    { city: "Riyadh",        foundations: 71, adoption: 58, velocity: 72, stewardship: 44, overall: 61 },
+    { city: "Shenzhen",      foundations: 84, adoption: 79, velocity: 86, stewardship: 41, overall: 73 },
+    { city: "Abu Dhabi",     foundations: 80, adoption: 65, velocity: 74, stewardship: 58, overall: 69 },
+  ];
 
-        <div className="border border-ink/15 bg-card overflow-x-auto">
-          <table className="w-full min-w-[820px]">
-            <thead>
-              <tr className="border-b border-ink/15 bg-muted/30">
-                <th className="text-left py-4 px-4 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
-                  City
-                </th>
-                {cols.map((c) => (
-                  <th
-                    key={c.key}
-                    className="text-left py-4 px-4 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground"
-                  >
-                    {c.label}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {peers.map((p) => (
-                <tr
-                  key={p.city}
-                  className={`border-b border-ink/10 last:border-0 ${p.dubai ? "bg-teal/[0.06]" : ""}`}
-                >
-                  <td className="py-4 px-4 font-serif text-lg text-ink whitespace-nowrap">
-                    {p.dubai && <span className="text-teal-deep mr-2">▸</span>}
-                    {p.city}
-                  </td>
-                  {cols.map((c) => (
-                    <Cell key={c.key} value={p[c.key] as number} highlight={p.dubai} />
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-          Figure 5 · Composite scores 0–100 · Source: Observatory composite, 2026 ·
-          Comparability note: policy clarity indices harmonized to OECD AI Policy
-          Observatory taxonomy.
+  return (
+    <section id="benchmark" className="py-16 bg-paper">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
+        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
+          Dubai leans into what AI can <em>interpret</em>, not just what it can automate
+        </h2>
+        <p>
+          Compared with global peers, Dubai overindexes on velocity and customer
+          experience use cases, and underindexes on stewardship infrastructure
+          (<em>Exhibit 6</em>). The strategic intent is clear: Dubai expects the
+          relationship between AI and growth to remain operator-led, with the city
+          providing the rails.
         </p>
+      </div>
+
+      <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
+        <ExhibitFrame
+          number={6}
+          title="Dubai executives are especially excited about using AI to accelerate customer experience and operational efficiency."
+          subtitle="Sources of excitement for executives related to AI scaling, number of respondents (n = 96, top-2 selection)"
+          source="Dubai Executive Sentiment Pulse 2026"
+          footnotes={<div>Respondents could select up to 2 options. Of 96, 84% selected the top item.</div>}
+        >
+          <div className="space-y-1">
+            <UnitBar label="Customer experience uplift"   count={56} total={70} value={81} />
+            <UnitBar label="Operational efficiency gains" count={47} total={70} value={68} />
+            <UnitBar label="New revenue / product lines"  count={31} total={70} value={45} />
+            <UnitBar label="Talent productivity"          count={26} total={70} value={38} />
+            <UnitBar label="Risk & compliance automation" count={17} total={70} value={25} />
+            <UnitBar label="Sustainability optimisation"  count={11} total={70} value={16} />
+          </div>
+        </ExhibitFrame>
+      </div>
+
+      <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
+        <ExhibitFrame
+          number={7}
+          title="Dubai leads peer cities on velocity, but trails on stewardship infrastructure."
+          subtitle="Composite AI readiness benchmark, normalised 0–100 by zone"
+          source="Dubai Observatory peer benchmark; OECD, World Bank, Tortoise Global AI Index, public filings (2026)"
+          footnotes={<div>Dubai indicators current to May 2026; peer indicators current to latest available filing 2025–26.</div>}
+        >
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-ink">
+                  <th className="text-left font-semibold py-3">City</th>
+                  <th className="text-right font-semibold py-3 px-2">Foundations</th>
+                  <th className="text-right font-semibold py-3 px-2">Adoption</th>
+                  <th className="text-right font-semibold py-3 px-2">Velocity</th>
+                  <th className="text-right font-semibold py-3 px-2">Stewardship</th>
+                  <th className="text-right font-semibold py-3 px-2 bg-brand-pale/40">Overall</th>
+                </tr>
+              </thead>
+              <tbody>
+                {peers.map((p) => (
+                  <tr
+                    key={p.city}
+                    className={`border-b border-rule ${p.city === "Dubai" ? "bg-brand-pale/30 font-semibold" : ""}`}
+                  >
+                    <td className="py-3">{p.city}</td>
+                    <td className="py-3 px-2 text-right tabular-nums">{p.foundations}</td>
+                    <td className="py-3 px-2 text-right tabular-nums">{p.adoption}</td>
+                    <td className="py-3 px-2 text-right tabular-nums">{p.velocity}</td>
+                    <td className="py-3 px-2 text-right tabular-nums">{p.stewardship}</td>
+                    <td className="py-3 px-2 text-right tabular-nums bg-brand-pale/30">{p.overall}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </ExhibitFrame>
       </div>
     </section>
   );

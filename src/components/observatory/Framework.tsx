@@ -1,77 +1,95 @@
-const layers = [
+import { ExhibitFrame, StackedBar } from "./Exhibits";
+
+const rooms = [
   {
-    layer: "Demand & adoption",
-    desc: "Real AI use across enterprise, government, and consumers — the surface where value is realized.",
-    indicators: ["Enterprise pilot rate", "Gov service deployments", "Consumer AI use"],
+    name: "Foundations",
+    pct: 34,
+    blurb: "Compute, connectivity, data estates, regulatory clarity",
+    body:
+      "The base layer where AI is even possible at scale. Dubai's compute density, sovereign data residency frameworks, and energy strategy decide whether the rest of the agenda is buildable. Where the city has invested early—dedicated AI capacity, the Dubai Data Law, and the DET regulatory sandbox—readiness is high. Where investment lags—particularly in domain-specific data estates—the ceiling drops.",
   },
   {
-    layer: "Talent & skills",
-    desc: "The pool of researchers, builders, and operators with frontier-relevant capability.",
-    indicators: ["Frontier-model engineers", "Applied AI graduates", "Net inbound talent"],
+    name: "Adoption",
+    pct: 31,
+    blurb: "Sector deployment, talent, change capacity, capital",
+    body:
+      "The diffusion layer. Strong adoption signals come from fintech, logistics, and government services; weaker ones from construction, hospitality back-office, and SMEs outside the free zones. The constraint is rarely technology and almost always change capacity: managers who can redesign work around AI, and capital that funds the year between pilot and P&L impact.",
   },
   {
-    layer: "Capital & founders",
-    desc: "Founders forming companies and capital available to scale them in-region.",
-    indicators: ["AI-native startups", "Early-stage AI capital", "Late-stage rounds"],
+    name: "Velocity",
+    pct: 23,
+    blurb: "Time from policy to deployment, from pilot to production",
+    body:
+      "Dubai's distinguishing characteristic. The Observatory finds that the median fintech AI pilot reaches production in 14 weeks versus a global benchmark of 31. Velocity is the compounding advantage—every cycle saved is a cycle that funds the next one—but velocity is also where governance debt accumulates fastest.",
   },
   {
-    layer: "Infrastructure & compute",
-    desc: "The compute, data, and connectivity substrate that determines what can be built locally.",
-    indicators: ["Sovereign GPU capacity", "Data center power", "Sector data availability"],
-  },
-  {
-    layer: "Governance & trust",
-    desc: "The rules, institutions, and assurances that make Dubai a credible place to deploy AI.",
-    indicators: ["AI regulation clarity", "Model assurance regime", "Cross-border data rules"],
-  },
-  {
-    layer: "Market access",
-    desc: "How easily global AI firms and capital reach Dubai-based opportunities.",
-    indicators: ["Free-zone onboarding", "Visa & residency speed", "Public procurement access"],
+    name: "Stewardship",
+    pct: 12,
+    blurb: "Trust, ethics, redress, model accountability, IP",
+    body:
+      "The slowest, most underweighted layer. As AI mediates more decisions, the cost of a single high-profile failure rises—and the institutions that absorb that cost (regulators, courts, auditors) need to mature in step. Stewardship is the room where Dubai's ambition is most exposed, and where deliberate investment now buys disproportionate credibility later.",
   },
 ];
 
 export function Framework() {
   return (
-    <section id="framework" className="py-24 lg:py-32 bg-muted/40 border-y border-ink/10">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16">
-          <div className="lg:col-span-5">
-            <span className="eyebrow text-teal-deep">Chapter 03 · Framework</span>
-            <h2 className="font-serif text-4xl lg:text-5xl mt-3 leading-[1.05] text-ink">
-              Six layers of
-              <br />
-              <span className="italic">AI economy readiness.</span>
-            </h2>
-          </div>
-          <p className="lg:col-span-6 lg:col-start-7 text-lg text-ink/70 self-end leading-relaxed">
-            Readiness is not a single score. The Observatory decomposes it into six
-            interlocking layers — adoption, talent, capital, infrastructure, governance,
-            and market access — so that strengths and gaps remain legible at the layer
-            where action is actually taken.
-          </p>
-        </div>
+    <section id="framework" className="py-16 bg-paper">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
+        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
+          Why Dubai behaves differently in a global AI race
+        </h2>
+        <p>
+          AI scaling is often framed as a linear march from pilot to production to
+          autonomy. That framing is misleading—especially in a city like Dubai,
+          where readiness is not a single curve but four distinct rooms, each with
+          its own constraints and compounding behaviour.
+        </p>
+        <p>
+          Time and capability are straightforward. As models improve and operators
+          see reliable performance over repeated cycles, they delegate larger portions
+          of the workflow. But <em>category dynamics</em> determine where readiness
+          naturally plateaus. Where decisions carry reputational or systemic weight,
+          institutions deliberately stop short—not because the technology is incapable,
+          but because human governance is intrinsic to value.
+        </p>
+        <p>
+          A useful way to translate this into Dubai-specific terms is to conceptualise
+          four <em>readiness zones</em>. These do not suggest linear stages—they are
+          distinct contexts of value creation, each with its own opportunities and
+          its own ceiling (<em>Exhibit 3</em>).
+        </p>
+      </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/15 border border-ink/15">
-          {layers.map((l, i) => (
-            <div key={l.layer} className="bg-background p-8 lg:p-9 flex flex-col">
-              <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground tabular-nums">
-                  L.{String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="h-1.5 w-1.5 bg-teal rounded-full" />
+      <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
+        <ExhibitFrame
+          number={3}
+          title="Dubai's AI readiness is concentrated in the lower zones of the stack—Foundations and Adoption—with Stewardship lagging."
+          subtitle="Composite readiness portfolio, % share of Observatory indicator weight by zone"
+          source="Dubai AI Economy Readiness Indicator Set 2026"
+          footnotes={<div>Based on 142 weighted indicators normalised to a 100-point scale (n = 8 sectors).</div>}
+        >
+          <StackedBar
+            segments={[
+              { label: "Stewardship", sub: "Trust, ethics, redress", value: 12, color: "oklch(0.22 0.05 255)" },
+              { label: "Velocity",    sub: "Pilot-to-production speed", value: 23, color: "oklch(0.35 0.15 260)" },
+              { label: "Adoption",    sub: "Sector deployment, talent, capital", value: 31, color: "oklch(0.5 0.22 263)" },
+              { label: "Foundations", sub: "Compute, data, regulation", value: 34, color: "oklch(0.7 0.14 255)" },
+            ]}
+          />
+        </ExhibitFrame>
+      </div>
+
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
+        <p className="mt-8">
+          In the context of Dubai's economic strategy, think of the four zones in this way:
+        </p>
+        <div className="not-prose space-y-6 mt-6">
+          {rooms.map((r) => (
+            <div key={r.name} className="border-l-2 border-brand pl-5">
+              <div className="font-serif italic text-xl text-ink">
+                The {r.name} <span className="not-italic text-muted-foreground text-base font-sans">— {r.blurb}</span>
               </div>
-              <h3 className="font-serif text-2xl mt-5 text-ink leading-snug">
-                {l.layer}
-              </h3>
-              <p className="mt-3 text-sm text-ink/70 leading-relaxed flex-1">{l.desc}</p>
-              <ul className="mt-6 pt-5 border-t border-ink/10 space-y-1.5">
-                {l.indicators.map((ind) => (
-                  <li key={ind} className="font-mono text-[11px] text-muted-foreground tracking-wide">
-                    → {ind}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-[15px] leading-relaxed text-ink/85 mt-2">{r.body}</p>
             </div>
           ))}
         </div>

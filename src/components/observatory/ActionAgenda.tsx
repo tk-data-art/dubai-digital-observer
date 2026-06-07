@@ -1,115 +1,72 @@
-const clusters = [
+const actions = [
   {
-    title: "Strengthen high-value sector adoption",
-    horizon: "0–12 months",
-    actions: [
-      "Stand up sector pilot accelerators in fintech, logistics, and government services.",
-      "Publish reference architectures co-developed with chamber members.",
-    ],
+    title: "Build signature AI experiences in flagship sectors",
+    body: "Not shinier copilots, but Dubai-authored interpretation layers in fintech, logistics, and government services that demonstrate how the city thinks. Translate open-ended intent into curation and service that feels aligned with Dubai's operating ethos—and ensure that ethos travels across owned and external surfaces.",
   },
   {
-    title: "Improve founder & investor access",
-    horizon: "0–18 months",
-    actions: [
-      "Convene a chamber-backed AI capital roundtable across DIFC and ADGM.",
-      "Open a single intake for global AI founders evaluating Dubai.",
-    ],
+    title: "Pre-commit stewardship capacity before it is the bottleneck",
+    body: "The Observatory's weakest zone is the one most expensive to retrofit. Invest now in audit capability, model assurance, redress mechanisms, and AI literacy for regulators—so that the speed advantage is not consumed by trust debt three years from now.",
   },
   {
-    title: "Expand talent & skills partnerships",
-    horizon: "12–36 months",
-    actions: [
-      "Anchor a frontier-model talent program with two global research labs.",
-      "Co-design applied AI tracks with regional universities aligned to priority sectors.",
-    ],
+    title: "Convert the velocity advantage into compounding capital flows",
+    body: "Dubai's 14-week pilot-to-production median is a real advantage—but only if the freed cycles are redeployed into the next workload. Build a coordinated capital stack (sovereign, family-office, venture) that funds the year between pilot and P&L impact, particularly outside the free zones.",
   },
   {
-    title: "Improve market-entry pathways",
-    horizon: "0–12 months",
-    actions: [
-      "Publish a one-page AI market-entry playbook for global firms.",
-      "Compress procurement timelines for chamber-vetted AI solutions.",
-    ],
+    title: "Treat data estates as critical infrastructure",
+    body: "Domain-specific data—health, logistics, energy, public services—is the unfair advantage Dubai can build that compute alone cannot replicate. Sovereign data products, with clear consent and access frameworks, are the missing rail between Foundations and Adoption.",
+  },
+  {
+    title: "Codify a talent compact that scales with the workload, not the headcount",
+    body: "AI changes the unit economics of expertise. The next 100,000 AI-fluent operators in Dubai will not arrive through immigration alone; they will be cultivated through structured reskilling, university partnerships, and platforms that let SMEs share scarce capability.",
   },
 ];
 
 export function ActionAgenda() {
   return (
-    <section id="agenda" className="py-24 lg:py-32">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16">
-          <div className="lg:col-span-7">
-            <span className="eyebrow text-teal-deep">Chapter 07 · Chamber action agenda</span>
-            <h2 className="font-serif text-4xl lg:text-6xl mt-3 leading-[1.02] text-ink">
-              From observation
-              <br />
-              <span className="italic text-teal-deep">to action.</span>
-            </h2>
-          </div>
-          <p className="lg:col-span-4 lg:col-start-9 text-lg text-ink/70 self-end leading-relaxed">
-            Four prioritized clusters where chamber-led action would most directly
-            shift Dubai's readiness curve in the next 36 months.
+    <section id="agenda" className="py-20 bg-secondary/30 border-t border-rule">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
+          What this means for Dubai leaders
+        </h2>
+        <div className="body-prose">
+          <p>
+            AI scaling will not change <em>what</em> Dubai is. Over time it will
+            change <em>how</em> the city's enterprises make decisions and how they
+            engage with markets across an increasingly broad range of categories.
           </p>
+          <p>
+            Operators already bring intent to a range of preferred AI surfaces—
+            evenly spread across global foundation-model platforms, regional clouds,
+            and Dubai-resident solutions. So the front door is no longer a single
+            destination. Dubai's institutions will need to meet operators where they
+            are, and where they are going.
+          </p>
+          <p>That implies a different capability agenda than many "AI in cities" discussions.</p>
         </div>
 
-        <div className="space-y-px bg-ink/15 border border-ink/15">
-          {clusters.map((c, i) => (
-            <div
-              key={c.title}
-              className="bg-background p-8 lg:p-10 grid lg:grid-cols-12 gap-6 group hover:bg-muted/30 transition-colors"
-            >
-              <div className="lg:col-span-1 font-serif text-5xl text-teal-deep tabular-nums leading-none">
+        <ol className="mt-8 space-y-8 list-none counter-reset-[step]">
+          {actions.map((a, i) => (
+            <li key={a.title} className="flex gap-6">
+              <div className="font-serif text-4xl text-brand leading-none w-12 shrink-0">
                 {String(i + 1).padStart(2, "0")}
               </div>
-              <div className="lg:col-span-5">
-                <h3 className="font-serif text-2xl lg:text-3xl text-ink leading-snug">
-                  {c.title}
-                </h3>
-                <span className="inline-block mt-3 font-mono text-[10px] uppercase tracking-[0.15em] border border-ink/25 px-2.5 py-1 text-ink/70">
-                  Horizon · {c.horizon}
-                </span>
+              <div>
+                <h3 className="font-serif italic text-xl text-ink leading-tight">{a.title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-ink/85">{a.body}</p>
               </div>
-              <ul className="lg:col-span-6 space-y-3">
-                {c.actions.map((a) => (
-                  <li key={a} className="flex gap-3 text-base text-ink/80 leading-relaxed">
-                    <span className="text-teal-deep">→</span>
-                    <span>{a}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
 
-        <div className="mt-16 border border-ink/15 bg-panel text-panel-foreground p-10 lg:p-14 grid lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-8">
-            <span className="eyebrow text-teal">Download · Edition 01</span>
-            <h3 className="font-serif text-3xl lg:text-4xl mt-3 leading-tight">
-              The full Observatory report,
-              <br />
-              <span className="italic text-teal">with every source attached.</span>
-            </h3>
-            <p className="mt-5 text-panel-foreground/70 max-w-xl leading-relaxed">
-              68 pages · 142 indicators · full methodology appendix and source register.
-              Refreshed each quarter alongside the live Observatory.
-            </p>
-          </div>
-          <div className="lg:col-span-4 flex flex-col gap-3">
-            <button
-              type="button"
-              className="bg-paper text-ink px-6 py-4 text-[12px] font-mono uppercase tracking-[0.15em] hover:bg-teal hover:text-paper transition-colors text-left flex items-center justify-between"
-            >
-              Download PDF (8.2 MB)
-              <span>↓</span>
-            </button>
-            <button
-              type="button"
-              className="border border-panel-foreground/30 px-6 py-4 text-[12px] font-mono uppercase tracking-[0.15em] hover:border-paper transition-colors text-left flex items-center justify-between"
-            >
-              Subscribe to updates
-              <span>→</span>
-            </button>
-          </div>
+        <div className="mt-12 rule-thick pt-8">
+          <p className="font-serif italic text-xl text-ink leading-snug">
+            "The winners will not be determined by how much of the economy becomes
+            AI-mediated, but by who governs the interpretation of intent as
+            mediation scales."
+          </p>
+          <p className="mt-4 text-sm text-muted-foreground">
+            — Dubai AI Economy Readiness Observatory, Edition 01
+          </p>
         </div>
       </div>
     </section>

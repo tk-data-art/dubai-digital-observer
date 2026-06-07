@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* Editorial typography for the Observatory */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /*
  * Design system definition.
@@ -65,36 +65,37 @@
   --color-ink: var(--ink);
   --color-paper: var(--paper);
   --color-rule: var(--rule);
-  --color-teal: var(--teal);
-  --color-teal-deep: var(--teal-deep);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-pale: var(--brand-pale);
   --color-panel: var(--panel);
   --color-panel-foreground: var(--panel-foreground);
-  --font-serif: 'Instrument Serif', 'Times New Roman', serif;
+  --font-serif: 'Bodoni Moda', 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.975 0.008 85);
-  --foreground: oklch(0.18 0.012 250);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0.02 250);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.012 250);
+  --card-foreground: oklch(0.16 0.02 250);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.012 250);
-  --primary: oklch(0.42 0.07 195);
-  --primary-foreground: oklch(0.98 0.005 85);
-  --secondary: oklch(0.94 0.01 85);
-  --secondary-foreground: oklch(0.18 0.012 250);
-  --muted: oklch(0.93 0.01 85);
-  --muted-foreground: oklch(0.45 0.015 250);
-  --accent: oklch(0.42 0.07 195);
-  --accent-foreground: oklch(0.98 0.005 85);
+  --popover-foreground: oklch(0.16 0.02 250);
+  --primary: oklch(0.48 0.23 265);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.005 250);
+  --secondary-foreground: oklch(0.16 0.02 250);
+  --muted: oklch(0.96 0.005 250);
+  --muted-foreground: oklch(0.45 0.012 250);
+  --accent: oklch(0.48 0.23 265);
+  --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.88 0.012 85);
-  --input: oklch(0.88 0.012 85);
-  --ring: oklch(0.42 0.07 195);
+  --border: oklch(0.9 0.005 250);
+  --input: oklch(0.9 0.005 250);
+  --ring: oklch(0.48 0.23 265);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -109,14 +110,15 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
-  /* Observatory editorial tokens */
-  --ink: oklch(0.18 0.012 250);
-  --paper: oklch(0.975 0.008 85);
-  --rule: oklch(0.82 0.012 85);
-  --teal: oklch(0.55 0.09 195);
-  --teal-deep: oklch(0.38 0.08 200);
-  --panel: oklch(0.18 0.025 230);
-  --panel-foreground: oklch(0.96 0.008 85);
+  /* Observatory / McKinsey-template tokens */
+  --ink: oklch(0.16 0.02 250);
+  --paper: oklch(1 0 0);
+  --rule: oklch(0.88 0.005 250);
+  --brand: oklch(0.5 0.24 265);          /* bright royal blue */
+  --brand-soft: oklch(0.62 0.18 260);    /* mid blue */
+  --brand-pale: oklch(0.88 0.06 255);    /* pale blue */
+  --panel: oklch(0.17 0.04 255);         /* deep navy */
+  --panel-foreground: oklch(0.98 0.003 250);
 }
 
 .dark {
@@ -178,16 +180,37 @@
 
   .display-xl {
     font-family: var(--font-serif);
-    font-weight: 400;
-    letter-spacing: -0.02em;
+    font-weight: 500;
+    letter-spacing: -0.015em;
     line-height: 1.02;
   }
 
   .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.18em;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
   }
+
+  .body-prose p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+  }
+  .body-prose p + p { margin-top: 0; }
+  .body-prose em { font-style: italic; }
+
+  .exhibit-title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .rule-thin { border-top: 1px solid var(--rule); }
+  .rule-thick { border-top: 2px solid var(--ink); }
 }
