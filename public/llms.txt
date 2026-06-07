@@ -1,0 +1,9 @@
+# Dubai AI Economy Readiness Observatory
+
+> A living, evidence-backed research product from the Dubai Chamber of Digital Economy tracking Dubai's readiness to scale artificial intelligence across sectors, infrastructure, talent, governance, and capital.
+
+The Observatory combines a narrative editorial report with a transparent indicator and source layer. Every metric carries a source, a date, and a confidence tier; missing evidence is labeled as a data gap rather than estimated.
+
+## Pages
+
+- [Observatory home](/): full single-page report covering thesis, methodology, by-the-numbers, framework, sector deep dives, peer-city benchmark, source register, and chamber action agenda.
