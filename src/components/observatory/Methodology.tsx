@@ -6,16 +6,20 @@ export function Methodology() {
           Methodology: About the Observatory
         </h3>
         <p className="text-[15px] leading-relaxed text-ink/85">
-          Findings draw on the Dubai AI Economy Readiness Indicator Set 2026
-          (assembled February–May 2026; n = 142 quantitative indicators across 8
-          sectors), the Dubai Executive Sentiment Pulse (fielded April 14–28,
-          2026; n = 96 senior executives), and a peer-city benchmark set
-          covering Singapore, London, Riyadh, Abu Dhabi, San Francisco, and
-          Shenzhen. Percentages cited in the text refer to Dubai-resident
-          enterprise respondents (n = 96), unless otherwise stated. As a
-          <em> living</em> product, indicators are refreshed quarterly; figures
-          should be read as directional snapshots in time. For methodological
-          notes, sources, and confidence tiers, see the appended source register.
+          This edition is compiled from published, citable evidence current to
+          August 2026: the Dubai Universal Blueprint for Artificial Intelligence
+          (April 2024) and Dubai Economic Agenda D33; the UAE National AI Strategy
+          2031; Microsoft's Global AI Diffusion reports (H2 2025 and Q1 2026); the
+          IBM Global AI Adoption Index; PwC-derived AI-to-GDP estimates reported in
+          June 2025; Oxford Insights' Government AI Readiness Index 2024; IMD's
+          World Digital Competitiveness Ranking 2025; MAGNiTT's FY2025 venture
+          data; and primary regulatory instruments including the UAE Charter for
+          the Development and Use of AI and DIFC Data Protection Regulation 10.
+          Where a public indicator does not exist, the Observatory records a{" "}
+          <em>data gap</em> rather than estimating; composite zone weightings and
+          sector scores are explicitly labelled as Observatory judgements. As a{" "}
+          <em>living</em> product, indicators are refreshed quarterly and should be
+          read as directional snapshots in time.
         </p>
       </div>
     </section>

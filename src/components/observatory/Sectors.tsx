@@ -1,14 +1,14 @@
 import { ExhibitFrame, UnitBar } from "./Exhibits";
 
 const sectors = [
-  { name: "Financial services",       count: 24, value: "82" },
-  { name: "Logistics & trade",        count: 22, value: "78" },
-  { name: "Government services",      count: 21, value: "75" },
-  { name: "Healthcare & life sciences", count: 17, value: "64" },
-  { name: "Real estate & construction", count: 14, value: "56" },
-  { name: "Tourism & hospitality",    count: 13, value: "52" },
-  { name: "Energy & utilities",       count: 12, value: "49" },
-  { name: "Creative & media",         count: 11, value: "47" },
+  { name: "Government services",        count: 24, value: "High" },
+  { name: "Financial services & DIFC",  count: 22, value: "High" },
+  { name: "Logistics & trade",          count: 21, value: "High" },
+  { name: "Compute & data infrastructure", count: 18, value: "Rising" },
+  { name: "Healthcare & life sciences", count: 16, value: "Moderate" },
+  { name: "Tourism & hospitality",      count: 13, value: "Moderate" },
+  { name: "Real estate & construction", count: 11, value: "Early" },
+  { name: "Creative & media",           count: 10, value: "Early" },
 ];
 
 export function Sectors() {
@@ -19,12 +19,13 @@ export function Sectors() {
           Sectors expect to scale—yet capacity is contested
         </h2>
         <p>
-          Dubai sectors broadly recognise the opportunity, even if they are not yet
-          aligned on how fast to move. In the Sentiment Pulse, 86 percent of
-          financial-services executives place themselves at the "bullish and excited
-          to lead" end of the scale, alongside 79 percent in logistics, while
-          construction (50 percent) and hospitality back-office (46 percent) sit
-          closer to the "cautious—exploring and monitoring" middle.
+          Dubai's fastest-moving sectors are those with an explicit public mandate.
+          Government services now carry named accountability: the Executive Council
+          approved chief AI officers across every Dubai government entity in October
+          2025. Financial services, anchored by DIFC's Regulation 10 on autonomous
+          and semi-autonomous systems, has the clearest rulebook for delegating
+          decisions to machines. Logistics and trade continue to benefit from the
+          emirate's long investment in digitised customs and port operations.
         </p>
         <p>
           The posture, however, is fragmented across the value chain. Front-office,
@@ -37,14 +38,15 @@ export function Sectors() {
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={4}
-          title="Financial services, logistics and government services lead Dubai's sector readiness; creative and energy follow."
-          subtitle="Composite sector readiness scores, 0–100, with Observatory confidence weight"
-          source="Dubai AI Economy Readiness Indicator Set 2026"
+          title="Government services, financial services and logistics lead Dubai's sector readiness; construction and creative follow."
+          subtitle="Observatory readiness assessment by sector, weighted indicator coverage"
+          source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments, Microsoft Q1 2026 diffusion data and MAGNiTT FY2025 venture data"
           footnotes={
             <div>
-              Each square = one weighted indicator (max 28). Score shown is the
-              normalised composite (0–100) including Foundations, Adoption, Velocity,
-              and Stewardship sub-indices.
+              Each square denotes one indicator with published supporting evidence
+              (max 28). Bands are an Observatory judgement, not a survey result;
+              sectors with fewer published indicators score lower on coverage as
+              well as on maturity.
             </div>
           }
         >
@@ -58,13 +60,13 @@ export function Sectors() {
 
       <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
         <p className="mt-8">
-          It's also instructive how Dubai frames the moment relative to peers. Only 8
-          percent of surveyed executives describe agentic AI as an existential threat
-          to their business model, compared with 22 percent in London and 19 percent
-          in Singapore. Instead, Dubai overwhelmingly reads the moment as a{" "}
-          <em>productivity and service opportunity</em>, with 84 percent pointing to
-          enhanced customer experience and operational efficiency as the dominant
-          source of excitement (<em>Exhibit 5</em>).
+          It is also instructive how the region frames the moment relative to peers.
+          AI startups across MENA raised a record USD 858 million in 2025—22 percent
+          of all regional venture funding, roughly double the prior share—while
+          Saudi Arabia became the region's largest venture market by value at USD
+          1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
+          combination of diffusion, regulatory clarity, and speed to deployment
+          (<em>Exhibit 4</em>).
         </p>
         <p>
           The lag in slower-moving sectors is not disbelief—it is selectivity. Moving

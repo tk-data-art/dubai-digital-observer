@@ -1,16 +1,60 @@
 import { ExhibitFrame } from "./Exhibits";
 
-const trustRows: { group: string; label: string; pct: number }[] = [
-  { group: "Foundational trust anchors", label: "Transparency on AI decisioning logic", pct: 61 },
-  { group: "",                            label: "Data residency & privacy safeguards", pct: 58 },
-  { group: "",                            label: "Proven reliability in production",    pct: 54 },
-  { group: "",                            label: "Explainability of outcomes",          pct: 47 },
-  { group: "Structural control mechanisms", label: "Sector-level audit & assurance",    pct: 49 },
-  { group: "",                            label: "On-shore model hosting",              pct: 46 },
-  { group: "",                            label: "Per-vendor data toggles",             pct: 41 },
-  { group: "",                            label: "Third-party certification badges",    pct: 38 },
-  { group: "",                            label: "Portability / retention controls",    pct: 36 },
-  { group: "Explicit human oversight",    label: "Human-in-the-loop intervention",     pct: 39 },
+const instruments: { group: string; label: string; detail: string; status: string }[] = [
+  {
+    group: "National frameworks",
+    label: "UAE Charter for the Development and Use of AI",
+    detail: "Principles for safe, fair and accountable AI, published on the federal legislation portal",
+    status: "In force",
+  },
+  {
+    group: "",
+    label: "UAE National AI Strategy 2031",
+    detail: "Federal strategy setting AI-in-government and AI-in-economy objectives",
+    status: "In force",
+  },
+  {
+    group: "",
+    label: "Regulatory Intelligence ecosystem",
+    detail: "Cabinet approved the first integrated ecosystem, including AI-assisted legislative drafting, 14 April 2025",
+    status: "Building",
+  },
+  {
+    group: "Emirate-level",
+    label: "Dubai Universal Blueprint for Artificial Intelligence",
+    detail: "Launched 29 April 2024; projected AED 100bn annual uplift",
+    status: "In delivery",
+  },
+  {
+    group: "",
+    label: "Chief AI Officers across Dubai government entities",
+    detail: "Approved by the Executive Council, October 2025",
+    status: "In delivery",
+  },
+  {
+    group: "",
+    label: "One Million Prompters",
+    detail: "Dubai Centre for AI programme to train one million people in prompt engineering over three years",
+    status: "In delivery",
+  },
+  {
+    group: "Sectoral & data",
+    label: "DIFC Data Protection Regulation 10",
+    detail: "Governs personal data processed through autonomous and semi-autonomous systems",
+    status: "In force",
+  },
+  {
+    group: "",
+    label: "Model assurance, audit and redress capacity",
+    detail: "No published emirate-wide standard or audit body identified",
+    status: "Data gap",
+  },
+  {
+    group: "",
+    label: "City-level AI incident and complaints reporting",
+    detail: "No public register identified",
+    status: "Data gap",
+  },
 ];
 
 export function Trust() {
@@ -22,49 +66,62 @@ export function Trust() {
         </h2>
         <p>
           If the front door of AI is moving upstream, trust is becoming as important
-          as bandwidth. What's striking is the emerging alignment—along with a subtle
-          Dubai-specific divergence—between operators and regulators on what creates
-          trust.
+          as bandwidth. The UAE has moved early on the declaratory layer—a national
+          AI charter, a strategy with explicit economic targets, and, since April
+          2025, a cabinet-approved regulatory intelligence ecosystem that uses AI in
+          legislative drafting itself. At emirate level, the Universal Blueprint,
+          chief AI officers in every government entity, and the One Million Prompters
+          programme give the agenda institutional owners.
         </p>
         <p>
-          Among Dubai executives, trust is anchored in two requirements: being
-          <em> safe</em> and being <em>consistently right</em>. Transparency on AI
-          decisioning logic and data residency safeguards remain the core pillars
-          (more than half include each in their top three). The more actionable
-          nuance emerges in how trust is built across the AI lifecycle.
+          What is thinner is the assurance layer: audit capability, model
+          accountability standards, and public redress mechanisms. The Observatory
+          records these as data gaps rather than weaknesses—no public instrument
+          exists to measure (<em>Exhibit 8</em>).
         </p>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={8}
-          title="Dubai operators are most likely to trust AI systems that prioritise transparency and data residency."
-          subtitle="Executive-reported sources of trust, % of respondents selecting as a top-3 requirement"
-          source="Dubai Executive Sentiment Pulse 2026"
-          footnotes={<div>Respondents with ≥1 deployed AI workload (n = 96).</div>}
+          title="Dubai's declaratory and delivery layers are well populated; the assurance layer is not yet observable."
+          subtitle="Published AI governance instruments relevant to Dubai, by layer and status"
+          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; Dubai Government Media Office, April 2024 and October 2025; DIFC Commissioner of Data Protection"
+          footnotes={
+            <div>
+              "Data gap" indicates that no published instrument or public register
+              was identified as of August 2026; it is not a judgement that the
+              capability is absent.
+            </div>
+          }
         >
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b-2 border-ink">
-                <th className="text-left py-3 font-semibold w-1/3">Category</th>
-                <th className="text-left py-3 font-semibold">Requirement</th>
-                <th className="text-right py-3 font-semibold w-16">%</th>
+                <th className="text-left py-3 font-semibold w-1/5">Layer</th>
+                <th className="text-left py-3 font-semibold">Instrument</th>
+                <th className="text-right py-3 font-semibold w-28">Status</th>
               </tr>
             </thead>
             <tbody>
-              {trustRows.map((r, i) => (
+              {instruments.map((r, i) => (
                 <tr key={i} className="border-b border-rule">
                   <td className="py-3 pr-4 align-top font-semibold text-ink">{r.group}</td>
                   <td className="py-3">
-                    <div className="flex items-center gap-3">
-                      <div className="text-ink min-w-[16rem]">{r.label}</div>
-                      <div
-                        className="h-3"
-                        style={{ width: `${r.pct * 2}px`, background: "var(--brand)" }}
-                      />
-                    </div>
+                    <div className="text-ink">{r.label}</div>
+                    <div className="text-muted-foreground text-[13px] mt-0.5">{r.detail}</div>
                   </td>
-                  <td className="py-3 text-right tabular-nums font-semibold text-ink">{r.pct}</td>
+                  <td className="py-3 text-right align-top">
+                    <span
+                      className={`inline-block px-2 py-1 text-[11px] font-semibold uppercase tracking-wide ${
+                        r.status === "Data gap"
+                          ? "bg-secondary text-muted-foreground"
+                          : "bg-brand-pale/60 text-ink"
+                      }`}
+                    >
+                      {r.status}
+                    </span>
+                  </td>
                 </tr>
               ))}
             </tbody>

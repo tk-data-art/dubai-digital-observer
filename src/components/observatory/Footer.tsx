@@ -6,7 +6,7 @@ export function Footer() {
           <div className="font-serif text-2xl">Dubai Chamber<br /><span className="italic text-base">of Digital Economy</span></div>
           <p className="mt-4 text-sm text-panel-foreground/75 max-w-xs">
             The Observatory is a living research product. Indicators are
-            refreshed quarterly; the next edition is scheduled for September 2026.
+            refreshed quarterly; the next edition is scheduled for November 2026.
           </p>
         </div>
         <div>
