@@ -65,8 +65,8 @@ export function Framework() {
           number={3}
           title="Dubai's AI readiness is concentrated in the lower zones of the stack—Foundations and Adoption—with Stewardship lagging."
           subtitle="Composite readiness portfolio, % share of Observatory indicator weight by zone"
-          source="Dubai AI Economy Readiness Indicator Set 2026"
-          footnotes={<div>Based on 142 weighted indicators normalised to a 100-point scale (n = 8 sectors).</div>}
+          source="Observatory framework weighting, informed by the Dubai Universal Blueprint for AI (2024), UAE National AI Strategy 2031 and published 2025–26 index data"
+          footnotes={<div>Weightings are an Observatory judgement across 8 sectors, normalised to 100; they express indicator coverage and evidence strength, not survey responses.</div>}
         >
           <StackedBar
             segments={[

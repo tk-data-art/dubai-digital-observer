@@ -66,7 +66,7 @@ export function Sectors() {
           Saudi Arabia became the region's largest venture market by value at USD
           1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
           combination of diffusion, regulatory clarity, and speed to deployment
-          (<em>Exhibit 5</em>).
+          (<em>Exhibit 4</em>).
         </p>
         <p>
           The lag in slower-moving sectors is not disbelief—it is selectivity. Moving
