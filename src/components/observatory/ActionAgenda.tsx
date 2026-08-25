@@ -9,7 +9,7 @@ const actions = [
   },
   {
     title: "Convert the velocity advantage into compounding capital flows",
-    body: "Dubai's 14-week pilot-to-production median is a real advantage—but only if the freed cycles are redeployed into the next workload. Build a coordinated capital stack (sovereign, family-office, venture) that funds the year between pilot and P&L impact, particularly outside the free zones.",
+    body: "Dubai's short policy-to-deployment cycle is a real advantage—but only if the freed cycles are redeployed into the next workload. Build a coordinated capital stack (sovereign, family-office, venture) that funds the year between pilot and P&L impact, particularly outside the free zones.",
   },
   {
     title: "Treat data estates as critical infrastructure",

@@ -20,7 +20,7 @@ const rooms = [
     pct: 23,
     blurb: "Time from policy to deployment, from pilot to production",
     body:
-      "Dubai's distinguishing characteristic. The Observatory finds that the median fintech AI pilot reaches production in 14 weeks versus a global benchmark of 31. Velocity is the compounding advantage—every cycle saved is a cycle that funds the next one—but velocity is also where governance debt accumulates fastest.",
+      "Dubai's distinguishing characteristic. Dubai's delivery cadence is visible in the record: the Universal Blueprint moved from launch in April 2024 to chief AI officers in every government entity by October 2025, and the UAE Cabinet approved AI-assisted legislative drafting in April 2025. Velocity is the compounding advantage—every cycle saved is a cycle that funds the next one—but velocity is also where governance debt accumulates fastest.",
   },
   {
     name: "Stewardship",
