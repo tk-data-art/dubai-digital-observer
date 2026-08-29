@@ -1,5 +1,5 @@
 import { Donut, Waffle } from "./Exhibits";
-import { StatMeta, Tag } from "./Editorial";
+import { StatMeta } from "./Editorial";
 
 export function ByTheNumbers() {
   return (
