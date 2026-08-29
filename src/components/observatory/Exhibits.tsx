@@ -174,7 +174,7 @@ export function StackedBar({
 }) {
   const total = segments.reduce((s, x) => s + x.value, 0);
   return (
-    <div className="flex items-stretch gap-6 max-w-2xl mx-auto">
+    <div className="flex items-stretch gap-4 sm:gap-6 max-w-2xl mx-auto">
       <div className="text-xs text-muted-foreground self-center">100%</div>
       <div className="w-20 flex flex-col" style={{ height: 360 }}>
         {segments.map((s) => (
