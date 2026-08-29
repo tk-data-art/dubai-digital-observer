@@ -1,4 +1,5 @@
 import { ExhibitFrame, UnitBar } from "./Exhibits";
+import { SectionHead, Block } from "./Editorial";
 
 export function Benchmark() {
   const peers = [
@@ -12,20 +13,31 @@ export function Benchmark() {
 
   return (
     <section id="benchmark" className="py-16 bg-paper">
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
-          Dubai leans into what AI can <em>diffuse</em>, not just what it can automate
-        </h2>
-        <p>
-          Compared with global peers, the UAE's distinguishing result is diffusion:
-          first globally for workplace AI adoption in Microsoft's Q1 2026 diffusion
-          report, ahead of Singapore, Norway, Ireland and France, with workplace
-          usage above 70 percent (<em>Exhibit 6</em>). On institutional measures the
-          position is strong but not first: 12th globally and first in MENA on
-          Oxford Insights' 2024 Government AI Readiness Index, and 9th of 69
-          economies on IMD's 2025 World Digital Competitiveness Ranking—5th on its
-          future-readiness sub-pillar (<em>Exhibit 7</em>).
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Finding 03 · Benchmark"
+          title="Dubai leans into what AI can diffuse, not just what it can automate"
+          context="Against global peers, the UAE's distinguishing result is diffusion rather than institutional rank alone."
+        />
+
+        <Block label="Key finding" accent>
+          <p>
+            Compared with global peers, the UAE's distinguishing result is diffusion:
+            first globally for workplace AI adoption in Microsoft's Q1 2026 diffusion
+            report, ahead of Singapore, Norway, Ireland and France, with workplace
+            usage above 70 percent (<em>Exhibit 06</em>).
+          </p>
+        </Block>
+
+        <Block label="Evidence">
+          <p>
+            On institutional measures the position is strong but not first: 12th
+            globally and first in MENA on Oxford Insights' 2024 Government AI
+            Readiness Index, and 9th of 69 economies on IMD's 2025 World Digital
+            Competitiveness Ranking—5th on its future-readiness sub-pillar
+            (<em>Exhibit 07</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
@@ -65,15 +77,15 @@ export function Benchmark() {
             </div>
           }
         >
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+          <div className="-mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
+            <table className="w-full min-w-[620px] text-sm">
               <thead>
-                <tr className="border-b-2 border-ink">
-                  <th className="text-left font-semibold py-3">Economy</th>
-                  <th className="text-right font-semibold py-3 px-2">Gov. AI readiness</th>
-                  <th className="text-right font-semibold py-3 px-2">Digital competitiveness</th>
-                  <th className="text-right font-semibold py-3 px-2 bg-brand-pale/40">Workplace adoption</th>
-                  <th className="text-left font-semibold py-3 px-2">Observatory note</th>
+                <tr className="border-b-2 border-ink align-bottom">
+                  <th className="text-left font-semibold py-3 pr-3">Economy</th>
+                  <th className="text-right font-semibold py-3 px-2 w-28">Gov. AI readiness</th>
+                  <th className="text-right font-semibold py-3 px-2 w-28">Digital competitiveness</th>
+                  <th className="text-right font-semibold py-3 px-2 w-28 bg-brand-pale/40">Workplace adoption</th>
+                  <th className="text-left font-semibold py-3 pl-4">Observatory note</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,11 +94,11 @@ export function Benchmark() {
                     key={p.city}
                     className={`border-b border-rule ${p.city === "United Arab Emirates" ? "bg-brand-pale/30 font-semibold" : ""}`}
                   >
-                    <td className="py-3">{p.city}</td>
-                    <td className="py-3 px-2 text-right tabular-nums">{p.gov}</td>
-                    <td className="py-3 px-2 text-right tabular-nums">{p.digital}</td>
-                    <td className="py-3 px-2 text-right tabular-nums bg-brand-pale/30">{p.adoption}</td>
-                    <td className="py-3 px-2 text-muted-foreground font-normal">{p.note}</td>
+                    <td className="py-3 pr-3 align-middle">{p.city}</td>
+                    <td className="py-3 px-2 text-right align-middle font-mono text-[13px] tabular-nums">{p.gov}</td>
+                    <td className="py-3 px-2 text-right align-middle font-mono text-[13px] tabular-nums">{p.digital}</td>
+                    <td className="py-3 px-2 text-right align-middle font-mono text-[13px] tabular-nums bg-brand-pale/30">{p.adoption}</td>
+                    <td className="py-3 pl-4 align-middle text-muted-foreground font-normal">{p.note}</td>
                   </tr>
                 ))}
               </tbody>
