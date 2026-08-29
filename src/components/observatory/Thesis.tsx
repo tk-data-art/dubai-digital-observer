@@ -1,6 +1,16 @@
+import { SectionHead } from "./Editorial";
+
 export function Thesis() {
   return (
     <section id="thesis" className="py-16 lg:py-20 bg-paper">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Context · The thesis"
+          title="Value creation is moving upstream, from where output is produced to where intent is expressed"
+          context="Dubai's growth model has been built around destinations. Agentic and generative AI change who shapes the next wave."
+        />
+      </div>
+
       <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
         <p>
           <strong>For two decades</strong>, Dubai's economic strategy has been organised
@@ -46,15 +56,27 @@ export function Thesis() {
         </p>
       </div>
 
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 mt-12">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink leading-tight">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0 mt-12 border-t border-rule pt-8">
+        <div className="eyebrow text-[0.66rem] tracking-[0.14em] text-muted-foreground mb-3">
+          Research questions
+        </div>
+        <h3 className="font-serif text-2xl md:text-[1.75rem] text-ink leading-[1.2] text-balance">
           The forward-looking questions sit slightly upstream.
-        </h2>
-        <ul className="mt-8 space-y-5 body-prose">
-          <li>— How can AI deepen Dubai's productivity in its highest-value sectors?</li>
-          <li>— How can the city scale adviser-grade capability to firms that have never had it?</li>
-          <li>— And if AI mediates and frames demand before a firm reaches the market, who ultimately governs that interpretation?</li>
-        </ul>
+        </h3>
+        <ol className="mt-6 space-y-4">
+          {[
+            "How can AI deepen Dubai's productivity in its highest-value sectors?",
+            "How can the city scale adviser-grade capability to firms that have never had it?",
+            "And if AI mediates and frames demand before a firm reaches the market, who ultimately governs that interpretation?",
+          ].map((q, i) => (
+            <li key={i} className="flex gap-4">
+              <span className="font-mono text-xs text-brand pt-[5px] shrink-0">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="text-[16px] leading-relaxed text-ink">{q}</span>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
