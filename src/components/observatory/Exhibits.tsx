@@ -146,7 +146,7 @@ export function UnitBar({
   value?: string | number;
 }) {
   return (
-    <div className="grid grid-cols-[14rem_1fr_3rem] items-center gap-4 py-2">
+    <div className="grid grid-cols-[8rem_1fr_2.75rem] sm:grid-cols-[14rem_1fr_3rem] items-center gap-3 sm:gap-4 py-2">
       <div className="text-sm text-ink">{label}</div>
       <div className="flex gap-[3px] flex-wrap">
         {Array.from({ length: total }, (_, i) => (
