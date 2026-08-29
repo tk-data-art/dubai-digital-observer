@@ -216,8 +216,9 @@ export function MaturityTable({
   rows: { label: string; values: number[] }[];
 }) {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="w-full text-sm">
+    <div className="w-full -mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
+      <table className="w-full min-w-[560px] text-sm">
+
         <thead>
           <tr className="rule-thin border-b border-ink/80">
             <th className="text-left font-semibold py-3 w-1/3">Readiness dimension</th>
