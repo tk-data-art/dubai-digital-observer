@@ -1,4 +1,5 @@
 import { ExhibitFrame, StackedBar } from "./Exhibits";
+import { SectionHead, Block, Tag } from "./Editorial";
 
 const rooms = [
   {
@@ -34,35 +35,44 @@ const rooms = [
 export function Framework() {
   return (
     <section id="framework" className="py-16 bg-paper">
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
-          Why Dubai behaves differently in a global AI race
-        </h2>
-        <p>
-          AI scaling is often framed as a linear march from pilot to production to
-          autonomy. That framing is misleading—especially in a city like Dubai,
-          where readiness is not a single curve but four distinct rooms, each with
-          its own constraints and compounding behaviour.
-        </p>
-        <p>
-          Time and capability are straightforward. As models improve and operators
-          see reliable performance over repeated cycles, they delegate larger portions
-          of the workflow. But <em>category dynamics</em> determine where readiness
-          naturally plateaus. Where decisions carry reputational or systemic weight,
-          institutions deliberately stop short—not because the technology is incapable,
-          but because human governance is intrinsic to value.
-        </p>
-        <p>
-          A useful way to translate this into Dubai-specific terms is to conceptualise
-          four <em>readiness zones</em>. These do not suggest linear stages—they are
-          distinct contexts of value creation, each with its own opportunities and
-          its own ceiling (<em>Exhibit 3</em>).
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Framework · Four readiness zones"
+          title="Why Dubai behaves differently in a global AI race"
+          context="Readiness is not a single curve. It is four distinct zones, each with its own constraints, compounding behaviour and natural ceiling."
+        />
+
+        <Block label="Key finding" accent>
+          <p>
+            AI scaling is often framed as a linear march from pilot to production to
+            autonomy. That framing is misleading—especially in a city like Dubai,
+            where readiness is not a single curve but four distinct rooms, each with
+            its own constraints and compounding behaviour.
+          </p>
+        </Block>
+
+        <Block label="Explanation">
+          <p>
+            Time and capability are straightforward. As models improve and operators
+            see reliable performance over repeated cycles, they delegate larger portions
+            of the workflow. But <em>category dynamics</em> determine where readiness
+            naturally plateaus. Where decisions carry reputational or systemic weight,
+            institutions deliberately stop short—not because the technology is incapable,
+            but because human governance is intrinsic to value.
+          </p>
+          <p>
+            A useful way to translate this into Dubai-specific terms is to conceptualise
+            four <em>readiness zones</em>. These do not suggest linear stages—they are
+            distinct contexts of value creation, each with its own opportunities and
+            its own ceiling (<em>Exhibit 03</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={3}
+          tag="observatory"
           title="Dubai's AI readiness is concentrated in the lower zones of the stack—Foundations and Adoption—with Stewardship lagging."
           subtitle="Composite readiness portfolio, % share of Observatory indicator weight by zone"
           source="Observatory framework weighting, informed by the Dubai Universal Blueprint for AI (2024), UAE National AI Strategy 2031 and published 2025–26 index data"
@@ -79,16 +89,24 @@ export function Framework() {
         </ExhibitFrame>
       </div>
 
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <p className="mt-8">
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <div className="flex items-center gap-3 mt-4 mb-5">
+          <span className="eyebrow text-[0.66rem] tracking-[0.14em] text-muted-foreground">
+            Zone definitions
+          </span>
+          <Tag kind="interpretation" />
+        </div>
+        <p className="text-[15px] leading-relaxed text-muted-foreground max-w-[62ch]">
           In the context of Dubai's economic strategy, think of the four zones in this way:
         </p>
-        <div className="not-prose space-y-6 mt-6">
+        <div className="space-y-6 mt-6">
           {rooms.map((r) => (
             <div key={r.name} className="border-l-2 border-brand pl-5">
-              <div className="font-serif italic text-xl text-ink">
-                The {r.name} <span className="not-italic text-muted-foreground text-base font-sans">— {r.blurb}</span>
+              <div className="flex flex-wrap items-baseline gap-x-3">
+                <span className="font-serif italic text-xl text-ink">The {r.name}</span>
+                <span className="font-mono text-xs text-brand">{r.pct}% weight</span>
               </div>
+              <div className="text-[13px] text-muted-foreground mt-1">{r.blurb}</div>
               <p className="text-[15px] leading-relaxed text-ink/85 mt-2">{r.body}</p>
             </div>
           ))}
