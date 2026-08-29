@@ -12,21 +12,26 @@ export function Hero() {
             </div>
           </div>
           <div>
-            <p className="eyebrow text-ink/80 mb-6">Digital Economy Practice</p>
-            <h1 className="display-xl text-ink text-5xl md:text-6xl lg:text-[5rem]">
+            <div className="flex flex-wrap items-center gap-3 mb-5">
+              <p className="eyebrow text-brand text-[0.68rem] tracking-[0.14em]">Digital Economy Practice</p>
+              <span className="hidden sm:inline h-px w-8 bg-rule" />
+              <p className="eyebrow text-[0.68rem] tracking-[0.14em] text-muted-foreground">Edition 01</p>
+            </div>
+            <h1 className="display-xl text-ink text-[2.4rem] sm:text-5xl lg:text-[4.2rem] text-balance">
               When ambition meets infrastructure: Dubai's readiness to scale AI across the economy
             </h1>
-            <p className="mt-8 text-xl text-ink/85 leading-snug max-w-3xl">
+            <p className="mt-7 text-lg md:text-xl text-ink/85 leading-snug max-w-3xl">
               With sectors moving from AI pilots to production, the strategic question for
               Dubai is no longer whether to lead, but where readiness will convert intent
               into compounding economic value.
             </p>
-            <p className="mt-6 text-sm italic text-muted-foreground max-w-2xl">
+            <p className="mt-6 border-l-2 border-rule pl-4 text-[13px] leading-relaxed italic text-muted-foreground max-w-2xl">
               This edition is a collaborative observation drawing on Dubai-wide sector
               indicators, executive interviews, and global benchmarks—representing the
               ongoing assessment of the Dubai Chamber of Digital Economy.
             </p>
           </div>
+
         </div>
       </div>
       <div className="w-full bg-ink">

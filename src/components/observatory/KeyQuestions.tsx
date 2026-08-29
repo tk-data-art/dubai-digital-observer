@@ -1,26 +1,38 @@
 import { MaturityTable, ExhibitFrame } from "./Exhibits";
+import { SectionHead, Block } from "./Editorial";
 
 export function KeyQuestions() {
   return (
     <section className="py-16 bg-paper">
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
-          The front door of AI value is moving upstream—and Dubai is already walking through it
-        </h2>
-        <p>
-          Those questions are not theoretical. The UAE has ranked first globally
-          for workplace AI adoption in successive Microsoft diffusion reports, and
-          by May 2026 workplace usage had crossed 70 percent of employees. At the
-          enterprise layer the picture is earlier but directionally similar: IBM's
-          adoption index put active AI deployment among large UAE companies at 42
-          percent, with 65 percent of UAE IT professionals reporting an accelerated
-          rollout (<em>Exhibit 1</em>).
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Finding 01 · Adoption"
+          title="The front door of AI value is moving upstream—and Dubai is already walking through it"
+          context="Where value is created is shifting from execution to interpretation. The question is whether measured adoption in Dubai matches that shift."
+        />
+
+        <Block label="Key finding" accent>
+          <p>
+            The UAE has ranked first globally for workplace AI adoption in
+            successive Microsoft diffusion reports, and by May 2026 workplace usage
+            had crossed 70 percent of employees. At the enterprise layer the picture
+            is earlier but directionally similar.
+          </p>
+        </Block>
+
+        <Block label="Evidence">
+          <p>
+            IBM's adoption index put active AI deployment among large UAE companies
+            at 42 percent, with 65 percent of UAE IT professionals reporting an
+            accelerated rollout (<em>Exhibit 01</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={1}
+          tag="observatory"
           title="Dubai's readiness rests on published commitments and measured adoption, not on intent alone."
           subtitle="Observatory assessment of maturity by capability layer, using publicly reported indicators"
           source="Microsoft Global AI Diffusion Report Q1 2026; IBM Global AI Adoption Index 2024; Oxford Insights Government AI Readiness Index 2024; IMD World Digital Competitiveness Ranking 2025"
@@ -44,13 +56,15 @@ export function KeyQuestions() {
         </ExhibitFrame>
       </div>
 
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose mt-8">
-        <p>
-          Clearly, this goes far beyond novelty. The macro expectation is equally
-          explicit: PwC-derived estimates reported in 2025 put AI's contribution at
-          roughly 13.6 percent of UAE GDP by 2031—the highest share in the GCC—
-          equivalent to more than USD 96 billion (<em>Exhibit 2</em>).
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <Block label="Implication" accent>
+          <p>
+            Clearly, this goes far beyond novelty. The macro expectation is equally
+            explicit: PwC-derived estimates reported in 2025 put AI's contribution at
+            roughly 13.6 percent of UAE GDP by 2031—the highest share in the GCC—
+            equivalent to more than USD 96 billion (<em>Exhibit 02</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
@@ -79,7 +93,7 @@ export function KeyQuestions() {
                   className="w-full"
                   style={{ background: b.color, height: `${b.v * 10}px` }}
                 />
-                <div className="mt-2 text-xs text-muted-foreground">{b.label}</div>
+                <div className="mt-2 text-xs text-muted-foreground text-center">{b.label}</div>
               </div>
             ))}
           </div>

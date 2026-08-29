@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import { Tag } from "./Editorial";
 
 export function ExhibitFrame({
   number,
@@ -7,6 +8,7 @@ export function ExhibitFrame({
   children,
   source,
   footnotes,
+  tag = "reported",
 }: {
   number: number;
   title: string;
@@ -14,18 +16,33 @@ export function ExhibitFrame({
   children: ReactNode;
   source: string;
   footnotes?: ReactNode;
+  tag?: "reported" | "observatory" | "gap" | "interpretation";
 }) {
   return (
-    <figure className="my-12 max-w-4xl mx-auto">
-      <div className="text-sm text-muted-foreground mb-3">Exhibit {number}</div>
-      <h3 className="exhibit-title mb-2">{title}</h3>
+    <figure className="my-14 max-w-4xl mx-auto border-t-2 border-ink pt-5">
+      <div className="flex flex-wrap items-center gap-3 mb-3">
+        <span className="eyebrow text-[0.68rem] tracking-[0.14em] text-ink">
+          Exhibit {String(number).padStart(2, "0")}
+        </span>
+        <Tag kind={tag} />
+      </div>
+      <h3 className="exhibit-title mb-2 text-balance">{title}</h3>
       {subtitle && (
-        <p className="text-sm font-semibold text-ink mb-6">{subtitle}</p>
+        <p className="text-[13px] leading-relaxed text-muted-foreground mb-6 max-w-[70ch]">
+          {subtitle}
+        </p>
       )}
       <div className="rule-thin pt-6">{children}</div>
-      <figcaption className="mt-6 text-xs text-muted-foreground space-y-1">
-        {footnotes}
-        <div>Source: {source}</div>
+      <figcaption className="mt-6 pt-4 border-t border-rule text-xs leading-relaxed text-muted-foreground space-y-1">
+        <div>
+          <span className="font-semibold text-ink/70">Source:</span> {source}
+        </div>
+        {footnotes && (
+          <div>
+            <span className="font-semibold text-ink/70">Methodology:</span>{" "}
+            <span className="[&_div]:inline">{footnotes}</span>
+          </div>
+        )}
         <div className="pt-3 font-serif italic text-foreground">
           Dubai Chamber of Digital Economy
         </div>
@@ -33,6 +50,7 @@ export function ExhibitFrame({
     </figure>
   );
 }
+
 
 /** Donut: pct out of 100, with big numeric center */
 export function Donut({ pct, label }: { pct: number; label: ReactNode }) {
@@ -128,7 +146,7 @@ export function UnitBar({
   value?: string | number;
 }) {
   return (
-    <div className="grid grid-cols-[14rem_1fr_3rem] items-center gap-4 py-2">
+    <div className="grid grid-cols-[8rem_1fr_2.75rem] sm:grid-cols-[14rem_1fr_3rem] items-center gap-3 sm:gap-4 py-2">
       <div className="text-sm text-ink">{label}</div>
       <div className="flex gap-[3px] flex-wrap">
         {Array.from({ length: total }, (_, i) => (
@@ -156,7 +174,7 @@ export function StackedBar({
 }) {
   const total = segments.reduce((s, x) => s + x.value, 0);
   return (
-    <div className="flex items-stretch gap-6 max-w-2xl mx-auto">
+    <div className="flex items-stretch gap-4 sm:gap-6 max-w-2xl mx-auto">
       <div className="text-xs text-muted-foreground self-center">100%</div>
       <div className="w-20 flex flex-col" style={{ height: 360 }}>
         {segments.map((s) => (
@@ -198,8 +216,9 @@ export function MaturityTable({
   rows: { label: string; values: number[] }[];
 }) {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="w-full text-sm">
+    <div className="w-full -mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
+      <table className="w-full min-w-[560px] text-sm">
+
         <thead>
           <tr className="rule-thin border-b border-ink/80">
             <th className="text-left font-semibold py-3 w-1/3">Readiness dimension</th>
