@@ -1,4 +1,5 @@
 import { ExhibitFrame } from "./Exhibits";
+import { SectionHead, Block } from "./Editorial";
 
 const instruments: { group: string; label: string; detail: string; status: string }[] = [
   {
@@ -60,25 +61,32 @@ const instruments: { group: string; label: string; detail: string; status: strin
 export function Trust() {
   return (
     <section id="trust" className="py-16 bg-paper">
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
-          Trust becomes a form of infrastructure
-        </h2>
-        <p>
-          If the front door of AI is moving upstream, trust is becoming as important
-          as bandwidth. The UAE has moved early on the declaratory layer—a national
-          AI charter, a strategy with explicit economic targets, and, since April
-          2025, a cabinet-approved regulatory intelligence ecosystem that uses AI in
-          legislative drafting itself. At emirate level, the Universal Blueprint,
-          chief AI officers in every government entity, and the One Million Prompters
-          programme give the agenda institutional owners.
-        </p>
-        <p>
-          What is thinner is the assurance layer: audit capability, model
-          accountability standards, and public redress mechanisms. The Observatory
-          records these as data gaps rather than weaknesses—no public instrument
-          exists to measure (<em>Exhibit 8</em>).
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Finding 04 · Governance"
+          title="Trust becomes a form of infrastructure"
+          context="As the front door of AI moves upstream, assurance capacity becomes as material to competitiveness as compute."
+        />
+
+        <Block label="Key finding" accent>
+          <p>
+            The UAE has moved early on the declaratory layer—a national AI charter, a
+            strategy with explicit economic targets, and, since April 2025, a
+            cabinet-approved regulatory intelligence ecosystem that uses AI in
+            legislative drafting itself. At emirate level, the Universal Blueprint,
+            chief AI officers in every government entity, and the One Million Prompters
+            programme give the agenda institutional owners.
+          </p>
+        </Block>
+
+        <Block label="Evidence">
+          <p>
+            What is thinner is the assurance layer: audit capability, model
+            accountability standards, and public redress mechanisms. The Observatory
+            records these as data gaps rather than weaknesses—no public instrument
+            exists to measure (<em>Exhibit 08</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
@@ -95,54 +103,61 @@ export function Trust() {
             </div>
           }
         >
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b-2 border-ink">
-                <th className="text-left py-3 font-semibold w-1/5">Layer</th>
-                <th className="text-left py-3 font-semibold">Instrument</th>
-                <th className="text-right py-3 font-semibold w-28">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {instruments.map((r, i) => (
-                <tr key={i} className="border-b border-rule">
-                  <td className="py-3 pr-4 align-top font-semibold text-ink">{r.group}</td>
-                  <td className="py-3">
-                    <div className="text-ink">{r.label}</div>
-                    <div className="text-muted-foreground text-[13px] mt-0.5">{r.detail}</div>
-                  </td>
-                  <td className="py-3 text-right align-top">
-                    <span
-                      className={`inline-block px-2 py-1 text-[11px] font-semibold uppercase tracking-wide ${
-                        r.status === "Data gap"
-                          ? "bg-secondary text-muted-foreground"
-                          : "bg-brand-pale/60 text-ink"
-                      }`}
-                    >
-                      {r.status}
-                    </span>
-                  </td>
+          <div className="-mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
+            <table className="w-full min-w-[560px] text-sm">
+              <thead>
+                <tr className="border-b-2 border-ink align-bottom">
+                  <th className="text-left py-3 pr-4 font-semibold w-[22%]">Layer</th>
+                  <th className="text-left py-3 font-semibold">Instrument</th>
+                  <th className="text-right py-3 pl-4 font-semibold w-32">Status</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {instruments.map((r, i) => (
+                  <tr key={i} className="border-b border-rule">
+                    <td className="py-4 pr-4 align-top font-semibold text-ink">{r.group}</td>
+                    <td className="py-4 pr-4 align-top">
+                      <div className="text-ink">{r.label}</div>
+                      <div className="text-muted-foreground text-[13px] mt-1 leading-relaxed">{r.detail}</div>
+                    </td>
+                    <td className="py-4 pl-4 text-right align-top">
+                      <span
+                        className={`inline-block px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.09em] leading-none ${
+                          r.status === "Data gap"
+                            ? "bg-secondary text-muted-foreground"
+                            : "bg-brand-pale/60 text-ink"
+                        }`}
+                      >
+                        {r.status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </ExhibitFrame>
       </div>
 
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <p>
-          Put differently, the instincts of a great regulator—discretion about what
-          to allow, restraint about what to defer, and reassurance at moments of
-          systemic uncertainty—must be translated into machine-readable policy and
-          auditable behaviour. Only then can autonomy scale without diluting what
-          makes Dubai's economy distinctive.
-        </p>
-        <p>
-          The strategic implication is that, in Dubai, trust is not only a safeguard.
-          It is a fundamental part of what investors, talent, and operators are
-          buying. A licence to operate in Dubai carries speed and access, but also
-          identity and assurance. Trust, therefore, must be <em>city-coded</em>.
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <Block label="Implication" accent>
+          <p>
+            Put differently, the instincts of a great regulator—discretion about what
+            to allow, restraint about what to defer, and reassurance at moments of
+            systemic uncertainty—must be translated into machine-readable policy and
+            auditable behaviour. Only then can autonomy scale without diluting what
+            makes Dubai's economy distinctive.
+          </p>
+        </Block>
+
+        <Block label="Strategic implication">
+          <p>
+            In Dubai, trust is not only a safeguard. It is a fundamental part of what
+            investors, talent, and operators are buying. A licence to operate in Dubai
+            carries speed and access, but also identity and assurance. Trust,
+            therefore, must be <em>city-coded</em>.
+          </p>
+        </Block>
       </div>
     </section>
   );
