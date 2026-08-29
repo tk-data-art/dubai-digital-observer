@@ -185,6 +185,7 @@ The Observatory is designed to be refreshed quarterly. To update evidence:
 
 ## License
 
-© Dubai Chamber of Digital Economy. All rights reserved.
+This project is licensed under the [MIT License](LICENSE).
 
-This repository is provided for development and deployment purposes. Please contact the project maintainers before reusing or redistributing the content.
+Copyright (c) 2026 tk-data-art.
+
