@@ -1,4 +1,5 @@
 import { ExhibitFrame, UnitBar } from "./Exhibits";
+import { SectionHead, Block } from "./Editorial";
 
 const sectors = [
   { name: "Government services",        count: 24, value: "High" },
@@ -14,30 +15,40 @@ const sectors = [
 export function Sectors() {
   return (
     <section id="sectors" className="py-16 bg-paper">
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6 leading-tight">
-          Sectors expect to scale—yet capacity is contested
-        </h2>
-        <p>
-          Dubai's fastest-moving sectors are those with an explicit public mandate.
-          Government services now carry named accountability: the Executive Council
-          approved chief AI officers across every Dubai government entity in October
-          2025. Financial services, anchored by DIFC's Regulation 10 on autonomous
-          and semi-autonomous systems, has the clearest rulebook for delegating
-          decisions to machines. Logistics and trade continue to benefit from the
-          emirate's long investment in digitised customs and port operations.
-        </p>
-        <p>
-          The posture, however, is fragmented across the value chain. Front-office,
-          customer-facing workloads are scaling quickly; middle and back-office,
-          where most productivity actually sits, is moving more slowly because the
-          cost of getting interpretation wrong is disproportionately high.
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <SectionHead
+          label="Finding 02 · Sectors"
+          title="Sectors expect to scale—yet capacity is contested"
+          context="Readiness clusters where a public mandate and a clear rulebook already exist; it thins out across the middle and back office."
+        />
+
+        <Block label="Key finding" accent>
+          <p>
+            Dubai's fastest-moving sectors are those with an explicit public mandate.
+            Government services now carry named accountability: the Executive Council
+            approved chief AI officers across every Dubai government entity in October
+            2025. Financial services, anchored by DIFC's Regulation 10 on autonomous
+            and semi-autonomous systems, has the clearest rulebook for delegating
+            decisions to machines. Logistics and trade continue to benefit from the
+            emirate's long investment in digitised customs and port operations.
+          </p>
+        </Block>
+
+        <Block label="Evidence">
+          <p>
+            The posture, however, is fragmented across the value chain. Front-office,
+            customer-facing workloads are scaling quickly; middle and back-office,
+            where most productivity actually sits, is moving more slowly because the
+            cost of getting interpretation wrong is disproportionately high
+            (<em>Exhibit 04</em>).
+          </p>
+        </Block>
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={4}
+          tag="observatory"
           title="Government services, financial services and logistics lead Dubai's sector readiness; construction and creative follow."
           subtitle="Observatory readiness assessment by sector, weighted indicator coverage"
           source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments, Microsoft Q1 2026 diffusion data and MAGNiTT FY2025 venture data"
@@ -58,21 +69,22 @@ export function Sectors() {
         </ExhibitFrame>
       </div>
 
-      <div className="mx-auto max-w-[760px] px-6 lg:px-0 body-prose">
-        <p className="mt-8">
-          It is also instructive how the region frames the moment relative to peers.
-          AI startups across MENA raised a record USD 858 million in 2025—22 percent
-          of all regional venture funding, roughly double the prior share—while
-          Saudi Arabia became the region's largest venture market by value at USD
-          1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
-          combination of diffusion, regulatory clarity, and speed to deployment
-          (<em>Exhibit 4</em>).
-        </p>
-        <p>
-          The lag in slower-moving sectors is not disbelief—it is selectivity. Moving
-          slower because the cost of getting interpretation wrong, in a city whose
-          brand depends on consistency, is disproportionately high.
-        </p>
+      <div className="mx-auto max-w-[760px] px-6 lg:px-0">
+        <Block label="Implication" accent>
+          <p>
+            It is also instructive how the region frames the moment relative to peers.
+            AI startups across MENA raised a record USD 858 million in 2025—22 percent
+            of all regional venture funding, roughly double the prior share—while
+            Saudi Arabia became the region's largest venture market by value at USD
+            1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
+            combination of diffusion, regulatory clarity, and speed to deployment.
+          </p>
+          <p>
+            The lag in slower-moving sectors is not disbelief—it is selectivity. Moving
+            slower because the cost of getting interpretation wrong, in a city whose
+            brand depends on consistency, is disproportionately high.
+          </p>
+        </Block>
       </div>
     </section>
   );
