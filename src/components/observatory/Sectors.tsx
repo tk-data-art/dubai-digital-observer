@@ -27,10 +27,14 @@ export function Sectors() {
             Dubai's fastest-moving sectors are those with an explicit public mandate.
             Government services now carry named accountability: the Executive Council
             approved chief AI officers across every Dubai government entity in October
-            2025. Financial services, anchored by DIFC's Regulation 10 on autonomous
-            and semi-autonomous systems, has the clearest rulebook for delegating
-            decisions to machines. Logistics and trade continue to benefit from the
+            2025, and by June 2026 a third of UAE organisations had appointed one.
+            Financial services, anchored by DIFC's Regulation 10 on autonomous and
+            semi-autonomous systems—amendments to which went to consultation in June
+            2026—has the clearest rulebook for delegating decisions to machines; DIFC
+            counted 1,677 innovation and AI firms, with 180 AI licences issued through
+            the Dubai AI Campus. Logistics and trade continue to benefit from the
             emirate's long investment in digitised customs and port operations.
+
           </p>
         </Block>
 
