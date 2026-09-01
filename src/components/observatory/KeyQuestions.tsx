@@ -22,9 +22,12 @@ export function KeyQuestions() {
 
         <Block label="Evidence">
           <p>
-            IBM's adoption index put active AI deployment among large UAE companies
-            at 42 percent, with 65 percent of UAE IT professionals reporting an
-            accelerated rollout (<em>Exhibit 01</em>).
+            The enterprise layer has now caught up in governance terms: a June 2026
+            study by IBM's Institute for Business Value with the Dubai Future
+            Foundation found 33 percent of UAE organisations had appointed a chief
+            AI officer, against 26 percent globally, while 89 percent of Middle East
+            CEOs report embedding AI into core workflows rather than isolated pilots
+            (<em>Exhibit 01</em>).
           </p>
         </Block>
       </div>
@@ -35,7 +38,7 @@ export function KeyQuestions() {
           tag="observatory"
           title="Dubai's readiness rests on published commitments and measured adoption, not on intent alone."
           subtitle="Observatory assessment of maturity by capability layer, using publicly reported indicators"
-          source="Microsoft Global AI Diffusion Report Q1 2026; IBM Global AI Adoption Index 2024; Oxford Insights Government AI Readiness Index 2024; IMD World Digital Competitiveness Ranking 2025"
+          source="Microsoft Global AI Diffusion Report Q1 2026; IBM Institute for Business Value & Dubai Future Foundation, June 2026; IBM CEO Study 2026; IMD World Digital Competitiveness Ranking 2025"
           footnotes={
             <div>
               Maturity bands are an Observatory judgement mapped from the cited
@@ -47,12 +50,13 @@ export function KeyQuestions() {
             columns={["Embedded", "In production", "Piloting", "Early"]}
             rows={[
               { label: "Workplace AI assistants (individual use)", values: [70, 18, 9, 3] },
-              { label: "Enterprise AI deployment (large firms)", values: [42, 26, 21, 11] },
-              { label: "Government AI services & chief AI officers", values: [38, 32, 22, 8] },
-              { label: "Sovereign compute & data-centre capacity", values: [20, 30, 35, 15] },
-              { label: "Agentic / multi-step autonomous AI", values: [8, 22, 40, 30] },
+              { label: "Enterprise AI embedded in core workflows", values: [48, 27, 17, 8] },
+              { label: "Government AI services & chief AI officers", values: [42, 32, 19, 7] },
+              { label: "Sovereign compute & data-centre capacity", values: [24, 32, 30, 14] },
+              { label: "Agentic / multi-step autonomous AI", values: [12, 26, 38, 24] },
             ]}
           />
+
         </ExhibitFrame>
       </div>
 
