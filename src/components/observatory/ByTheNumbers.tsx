@@ -84,10 +84,10 @@ export function ByTheNumbers() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="flex flex-col items-center text-center">
-              <Waffle pct={100} onPanel big="AED 100bn" label={<>projected annual uplift to Dubai's economy from the <strong className="text-white">Universal Blueprint for AI</strong> (~USD 27.2bn)</>} />
+              <Waffle pct={100} onPanel big="AED 100bn" label={<>target <strong className="text-white">contribution to Dubai's economy</strong> under the Universal Blueprint for AI (~USD 27.2bn)</>} />
               <StatMeta
                 onPanel
-                period="Announced April 2024"
+                period="Target set April 2024; no 2026 progress figure published"
                 geography="Dubai"
                 source="Dubai Universal Blueprint for Artificial Intelligence"
               />
@@ -96,38 +96,40 @@ export function ByTheNumbers() {
               <Waffle pct={96} onPanel big="$96bn" label={<>expected <strong className="text-white">AI contribution to UAE GDP by 2031</strong>, or c. 13.6% of output</>} />
               <StatMeta
                 onPanel
-                period="Projection to 2031"
+                period="Projection to 2031 — latest available (June 2025)"
                 geography="UAE"
-                source="PwC estimates via Emirates NBD Research, June 2025"
+                source="PwC estimates via Emirates NBD Research"
               />
             </div>
             <div className="flex flex-col items-center text-center">
-              <Waffle pct={60} onPanel big="5 GW" label={<>planned capacity of the <strong className="text-white">Stargate UAE</strong> AI campus; first 200 MW online in 2026</>} />
+              <Waffle pct={20} onPanel big="200 MW" label={<>first phase of <strong className="text-white">Stargate UAE</strong> targeted live in Q3 2026, within a 1 GW build-out</>} />
               <StatMeta
                 onPanel
-                period="May and October 2025"
+                period="August 2026"
                 geography="Abu Dhabi, UAE"
-                source="OpenAI and Reuters reporting on Stargate UAE"
+                source="G42 / Khazna build-out reporting, 2026"
               />
             </div>
             <div className="flex flex-col items-center text-center">
-              <Waffle pct={22} onPanel big="$858m" label={<>raised by MENA AI startups in 2025 — <strong className="text-white">22% of all regional VC</strong></>} />
+              <Waffle pct={31} onPanel big="$1.3bn" label={<>raised by MENA AI startups in Q1 2026 — <strong className="text-white">31% of it into the UAE</strong></>} />
               <StatMeta
                 onPanel
-                period="Full year 2025"
+                period="Q1 2026"
                 geography="MENA"
-                source="MAGNiTT FY2025 State of Venture Capital of AI in MENA"
+                source="MAGNiTT Q1 2026 State of Venture Capital in MENA"
               />
             </div>
           </div>
 
           <div className="mt-10 text-xs leading-relaxed text-panel-foreground/60 border-t border-white/15 pt-4">
             <span className="font-semibold text-panel-foreground/80">Sources:</span>{" "}
-            Microsoft Global AI Diffusion Report, Q1 2026; IBM Global AI
-            Adoption Index (Morning Consult), March 2024; Dubai Universal Blueprint
-            for Artificial Intelligence, April 2024; PwC / Emirates NBD Research,
-            June 2025; OpenAI &amp; Reuters on Stargate UAE, May and October 2025;
-            MAGNiTT FY2025 State of Venture Capital of AI in MENA, February 2026.
+            Microsoft Global AI Diffusion Report, Q1 2026 (May 2026); IBM Institute
+            for Business Value &amp; Dubai Future Foundation, June 2026; IBM CEO
+            Study 2026 (Middle East), June 2026; Dubai Universal Blueprint for
+            Artificial Intelligence, April 2024 (target unchanged); PwC via Emirates
+            NBD Research, June 2025 (latest available); G42 / Khazna Stargate UAE
+            build-out reporting, 2026; MAGNiTT Q1 2026 State of Venture Capital in MENA.
+
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <span className="inline-block border border-brand-soft/70 text-brand-pale px-2 py-[2px] text-[10px] font-semibold uppercase tracking-[0.09em] leading-none">
                 Reported indicator
