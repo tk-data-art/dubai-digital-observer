@@ -27,10 +27,14 @@ export function Sectors() {
             Dubai's fastest-moving sectors are those with an explicit public mandate.
             Government services now carry named accountability: the Executive Council
             approved chief AI officers across every Dubai government entity in October
-            2025. Financial services, anchored by DIFC's Regulation 10 on autonomous
-            and semi-autonomous systems, has the clearest rulebook for delegating
-            decisions to machines. Logistics and trade continue to benefit from the
+            2025, and by June 2026 a third of UAE organisations had appointed one.
+            Financial services, anchored by DIFC's Regulation 10 on autonomous and
+            semi-autonomous systems—amendments to which went to consultation in June
+            2026—has the clearest rulebook for delegating decisions to machines; DIFC
+            counted 1,677 innovation and AI firms, with 180 AI licences issued through
+            the Dubai AI Campus. Logistics and trade continue to benefit from the
             emirate's long investment in digitised customs and port operations.
+
           </p>
         </Block>
 
@@ -51,7 +55,7 @@ export function Sectors() {
           tag="observatory"
           title="Government services, financial services and logistics lead Dubai's sector readiness; construction and creative follow."
           subtitle="Observatory readiness assessment by sector, weighted indicator coverage"
-          source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments, Microsoft Q1 2026 diffusion data and MAGNiTT FY2025 venture data"
+          source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments and licence data (2026), Microsoft Q1 2026 diffusion data, IBM/DFF June 2026 governance study and MAGNiTT Q1 2026 venture data"
           footnotes={
             <div>
               Each square denotes one indicator with published supporting evidence
@@ -73,11 +77,13 @@ export function Sectors() {
         <Block label="Implication" accent>
           <p>
             It is also instructive how the region frames the moment relative to peers.
-            AI startups across MENA raised a record USD 858 million in 2025—22 percent
-            of all regional venture funding, roughly double the prior share—while
-            Saudi Arabia became the region's largest venture market by value at USD
-            1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
-            combination of diffusion, regulatory clarity, and speed to deployment.
+            MENA AI startups raised USD 1.3 billion in the first quarter of 2026
+            alone, with Saudi Arabia taking 51 percent of that total and the UAE 31
+            percent—even as overall regional deal activity fell 41 percent in the
+            first half of 2026 to its weakest level in five years. Dubai's edge is
+            therefore not capital volume alone; it is the combination of diffusion,
+            regulatory clarity, and speed to deployment.
+
           </p>
           <p>
             The lag in slower-moving sectors is not disbelief—it is selectivity. Moving

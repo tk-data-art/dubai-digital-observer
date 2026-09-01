@@ -44,7 +44,7 @@ export function Hero() {
         />
       </div>
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 py-6 text-sm text-muted-foreground flex justify-between">
-        <span>Edition 01 · Last updated August 2026</span>
+        <span>Edition 01 · Last updated September 2026</span>
         <span className="hidden md:inline">A living assessment</span>
       </div>
     </section>

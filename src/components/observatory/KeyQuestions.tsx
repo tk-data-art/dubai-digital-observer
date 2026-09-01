@@ -22,9 +22,12 @@ export function KeyQuestions() {
 
         <Block label="Evidence">
           <p>
-            IBM's adoption index put active AI deployment among large UAE companies
-            at 42 percent, with 65 percent of UAE IT professionals reporting an
-            accelerated rollout (<em>Exhibit 01</em>).
+            The enterprise layer has now caught up in governance terms: a June 2026
+            study by IBM's Institute for Business Value with the Dubai Future
+            Foundation found 33 percent of UAE organisations had appointed a chief
+            AI officer, against 26 percent globally, while 89 percent of Middle East
+            CEOs report embedding AI into core workflows rather than isolated pilots
+            (<em>Exhibit 01</em>).
           </p>
         </Block>
       </div>
@@ -35,7 +38,7 @@ export function KeyQuestions() {
           tag="observatory"
           title="Dubai's readiness rests on published commitments and measured adoption, not on intent alone."
           subtitle="Observatory assessment of maturity by capability layer, using publicly reported indicators"
-          source="Microsoft Global AI Diffusion Report Q1 2026; IBM Global AI Adoption Index 2024; Oxford Insights Government AI Readiness Index 2024; IMD World Digital Competitiveness Ranking 2025"
+          source="Microsoft Global AI Diffusion Report Q1 2026; IBM Institute for Business Value & Dubai Future Foundation, June 2026; IBM CEO Study 2026; IMD World Digital Competitiveness Ranking 2025"
           footnotes={
             <div>
               Maturity bands are an Observatory judgement mapped from the cited
@@ -47,12 +50,13 @@ export function KeyQuestions() {
             columns={["Embedded", "In production", "Piloting", "Early"]}
             rows={[
               { label: "Workplace AI assistants (individual use)", values: [70, 18, 9, 3] },
-              { label: "Enterprise AI deployment (large firms)", values: [42, 26, 21, 11] },
-              { label: "Government AI services & chief AI officers", values: [38, 32, 22, 8] },
-              { label: "Sovereign compute & data-centre capacity", values: [20, 30, 35, 15] },
-              { label: "Agentic / multi-step autonomous AI", values: [8, 22, 40, 30] },
+              { label: "Enterprise AI embedded in core workflows", values: [48, 27, 17, 8] },
+              { label: "Government AI services & chief AI officers", values: [42, 32, 19, 7] },
+              { label: "Sovereign compute & data-centre capacity", values: [24, 32, 30, 14] },
+              { label: "Agentic / multi-step autonomous AI", values: [12, 26, 38, 24] },
             ]}
           />
+
         </ExhibitFrame>
       </div>
 
@@ -60,29 +64,36 @@ export function KeyQuestions() {
         <Block label="Implication" accent>
           <p>
             Clearly, this goes far beyond novelty. The macro expectation is equally
-            explicit: PwC-derived estimates reported in 2025 put AI's contribution at
-            roughly 13.6 percent of UAE GDP by 2031—the highest share in the GCC—
-            equivalent to more than USD 96 billion (<em>Exhibit 02</em>).
+            explicit: PwC-derived estimates carried by Emirates NBD Research put
+            AI's contribution at roughly 13.6 percent of UAE GDP by 2031—the highest
+            share in the GCC—equivalent to more than USD 96 billion. No 2026 revision
+            of this projection has been published, so it is reported here as the
+            latest available estimate (<em>Exhibit 02</em>).
           </p>
         </Block>
       </div>
+
+
+
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={2}
           title="AI is expected to contribute a larger share of GDP in the UAE than anywhere else in the Gulf."
           subtitle="Projected AI contribution to GDP by 2030–31, % of output"
-          source="PwC estimates as reported by Khaleej Times and Emirates NBD Research, June 2025"
+          source="PwC estimates as reported by Emirates NBD Research, June 2025 — latest available; no 2026 revision published"
           footnotes={
             <div>
               UAE figure equates to more than USD 96 billion by 2031, with 20–30%
-              annual growth in AI-linked output. Global average shown for reference.
+              annual growth in AI-linked output. Comparators are the rest-of-region
+              figures published in the same source, not a global average.
             </div>
           }
+
         >
           <div className="flex items-end justify-center gap-2 h-44">
             {[
-              { label: "Global avg.", v: 8, color: "var(--brand-pale)" },
+              { label: "Rest of region", v: 8, color: "var(--brand-pale)" },
               { label: "Rest of GCC", v: 8.2, color: "var(--brand-pale)" },
               { label: "Saudi Arabia", v: 12.4, color: "var(--brand-soft)" },
               { label: "UAE", v: 13.6, color: "var(--brand)" },

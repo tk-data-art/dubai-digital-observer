@@ -16,6 +16,12 @@ const instruments: { group: string; label: string; detail: string; status: strin
   },
   {
     group: "",
+    label: "UAE Artificial Intelligence and Data Authority",
+    detail: "New federal authority approved June 2026 to consolidate AI and data policy across government",
+    status: "Building",
+  },
+  {
+    group: "",
     label: "Regulatory Intelligence ecosystem",
     detail: "Cabinet approved the first integrated ecosystem, including AI-assisted legislative drafting, 14 April 2025",
     status: "Building",
@@ -23,13 +29,19 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "Emirate-level",
     label: "Dubai Universal Blueprint for Artificial Intelligence",
-    detail: "Launched 29 April 2024; projected AED 100bn annual uplift",
+    detail: "Launched 29 April 2024; AED 100bn target contribution, no published progress figure to date",
     status: "In delivery",
   },
   {
     group: "",
     label: "Chief AI Officers across Dubai government entities",
-    detail: "Approved by the Executive Council, October 2025",
+    detail: "Approved by the Executive Council, October 2025; 33% of UAE organisations had a CAIO by June 2026",
+    status: "In delivery",
+  },
+  {
+    group: "",
+    label: "Dubai AI Academy and AI Week 2026",
+    detail: "Second edition held 6–9 April 2026; academy to train 10,000 leaders by 2030, alongside an AED 10bn AI fund",
     status: "In delivery",
   },
   {
@@ -41,7 +53,7 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "Sectoral & data",
     label: "DIFC Data Protection Regulation 10",
-    detail: "Governs personal data processed through autonomous and semi-autonomous systems",
+    detail: "Governs personal data processed through autonomous and semi-autonomous systems; amendments consulted on 18 June 2026",
     status: "In force",
   },
   {
@@ -56,6 +68,7 @@ const instruments: { group: string; label: string; detail: string; status: strin
     detail: "No public register identified",
     status: "Data gap",
   },
+
 ];
 
 export function Trust() {
@@ -73,9 +86,13 @@ export function Trust() {
             The UAE has moved early on the declaratory layer—a national AI charter, a
             strategy with explicit economic targets, and, since April 2025, a
             cabinet-approved regulatory intelligence ecosystem that uses AI in
-            legislative drafting itself. At emirate level, the Universal Blueprint,
-            chief AI officers in every government entity, and the One Million Prompters
-            programme give the agenda institutional owners.
+            legislative drafting itself. In June 2026 it went further, approving a
+            federal Artificial Intelligence and Data Authority to consolidate policy
+            across government. At emirate level, the Universal Blueprint, chief AI
+            officers in every government entity, the Dubai AI Academy launched at AI
+            Week 2026, and the One Million Prompters programme give the agenda
+            institutional owners.
+
           </p>
         </Block>
 
@@ -94,11 +111,11 @@ export function Trust() {
           number={8}
           title="Dubai's declaratory and delivery layers are well populated; the assurance layer is not yet observable."
           subtitle="Published AI governance instruments relevant to Dubai, by layer and status"
-          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; Dubai Government Media Office, April 2024 and October 2025; DIFC Commissioner of Data Protection"
+          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; UAE AI and Data Authority announcement, June 2026; Dubai Government Media Office, April 2024, October 2025 and February 2026; DIFC Consultation Paper No. 3, 18 June 2026"
           footnotes={
             <div>
               "Data gap" indicates that no published instrument or public register
-              was identified as of August 2026; it is not a judgement that the
+              was identified as of September 2026; it is not a judgement that the
               capability is absent.
             </div>
           }
