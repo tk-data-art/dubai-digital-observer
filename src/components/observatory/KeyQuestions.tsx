@@ -64,12 +64,12 @@ export function KeyQuestions() {
         <Block label="Implication" accent>
           <p>
             Clearly, this goes far beyond novelty. The macro expectation is equally
-            explicit: PwC-derived estimates reported in 2025 put AI's contribution at
-            roughly 13.6 percent of UAE GDP by 2031—the highest share in the GCC—
-            equivalent to more than USD 96 billion (<em>Exhibit 02</em>).
-          </p>
-        </Block>
-      </div>
+            explicit: PwC-derived estimates carried by Emirates NBD Research put
+            AI's contribution at roughly 13.6 percent of UAE GDP by 2031—the highest
+            share in the GCC—equivalent to more than USD 96 billion. No 2026 revision
+            of this projection has been published, so it is reported here as the
+            latest available estimate (<em>Exhibit 02</em>).
+
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
