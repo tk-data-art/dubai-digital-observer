@@ -59,29 +59,30 @@ export function Donut({ pct, label }: { pct: number; label: ReactNode }) {
   const filled = (pct / 100) * c;
   return (
     <div className="flex flex-col items-center text-center">
-      <svg width="140" height="140" viewBox="0 0 140 140" className="-rotate-90">
-        <circle cx="70" cy="70" r={r} fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="14" />
-        <circle
-          cx="70"
-          cy="70"
-          r={r}
-          fill="none"
-          stroke="var(--brand-soft)"
-          strokeWidth="14"
-          strokeDasharray={`${filled} ${c - filled}`}
-          strokeLinecap="butt"
-        />
+      <svg width="140" height="140" viewBox="0 0 140 140" role="img" aria-label={`${pct} percent`}>
+        <g transform="rotate(-90 70 70)">
+          <circle cx="70" cy="70" r={r} fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="14" />
+          <circle
+            cx="70"
+            cy="70"
+            r={r}
+            fill="none"
+            stroke="var(--brand-soft)"
+            strokeWidth="14"
+            strokeDasharray={`${filled} ${c - filled}`}
+            strokeLinecap="butt"
+          />
+        </g>
         <text
           x="70"
-          y="76"
+          y="82"
           textAnchor="middle"
-          className="rotate-90 origin-center"
-          transform="rotate(90 70 70)"
-          style={{ fontFamily: "Bodoni Moda, serif", fontSize: 30, fill: "var(--brand-soft)", fontWeight: 500 }}
+          style={{ fontFamily: "Bodoni Moda, serif", fontSize: 34, fill: "var(--brand-soft)", fontWeight: 500 }}
         >
           {pct}%
         </text>
       </svg>
+
       <div className="mt-3 text-sm leading-snug text-panel-foreground/90 max-w-[14rem]">{label}</div>
     </div>
   );
