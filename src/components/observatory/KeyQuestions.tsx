@@ -81,13 +81,15 @@ export function KeyQuestions() {
           number={2}
           title="AI is expected to contribute a larger share of GDP in the UAE than anywhere else in the Gulf."
           subtitle="Projected AI contribution to GDP by 2030–31, % of output"
-          source="PwC estimates as reported by Khaleej Times and Emirates NBD Research, June 2025"
+          source="PwC estimates as reported by Emirates NBD Research, June 2025 — latest available; no 2026 revision published"
           footnotes={
             <div>
               UAE figure equates to more than USD 96 billion by 2031, with 20–30%
-              annual growth in AI-linked output. Global average shown for reference.
+              annual growth in AI-linked output. Comparators are the rest-of-region
+              figures published in the same source, not a global average.
             </div>
           }
+
         >
           <div className="flex items-end justify-center gap-2 h-44">
             {[
