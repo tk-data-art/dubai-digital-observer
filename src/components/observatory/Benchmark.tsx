@@ -46,24 +46,26 @@ export function Benchmark() {
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={6}
-          title="The UAE leads the world on workplace AI diffusion, and adoption has compounded through 2025–26."
-          subtitle="Reported workplace AI usage and enterprise deployment indicators, % (UAE unless stated)"
-          source="Microsoft Global AI Diffusion Reports, H2 2025 and Q1 2026; IBM Global AI Adoption Index 2024"
+          title="The UAE leads the world on workplace AI diffusion, and governance adoption has caught up through 2026."
+          subtitle="Reported workplace AI usage, governance and funding indicators, % (UAE unless stated)"
+          source="Microsoft Global AI Diffusion Reports, H2 2025 and Q1 2026; IBM Institute for Business Value & Dubai Future Foundation, June 2026; IBM CEO Study 2026; MAGNiTT Q1 2026"
           footnotes={
             <div>
-              Workplace usage measured across employees; enterprise deployment
-              measured across companies with more than 1,000 employees.
+              Workplace usage is measured across employees; governance indicators
+              are measured across organisations and, for the CEO figure, across
+              Middle East chief executives surveyed.
             </div>
           }
         >
           <div className="space-y-1">
-            <UnitBar label="UAE workplace AI usage (May 2026)"      count={49} total={70} value={70} />
-            <UnitBar label="UAE employees using AI daily (Nov 2025)" count={42} total={70} value={60} />
-            <UnitBar label="UAE IT teams reporting faster rollout"   count={46} total={70} value={65} />
-            <UnitBar label="Large UAE enterprises with AI deployed"  count={29} total={70} value={42} />
-            <UnitBar label="AI share of MENA venture funding, 2025"  count={15} total={70} value={22} />
+            <UnitBar label="UAE workplace AI usage (Q1 2026)"          count={49} total={70} value={70} />
+            <UnitBar label="Middle East CEOs embedding AI (Jun 2026)"  count={62} total={70} value={89} />
+            <UnitBar label="UAE employees using AI daily (Nov 2025)"   count={42} total={70} value={60} />
+            <UnitBar label="UAE organisations with a chief AI officer" count={23} total={70} value={33} />
+            <UnitBar label="Global organisations with a chief AI officer" count={18} total={70} value={26} />
           </div>
         </ExhibitFrame>
+
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
