@@ -77,11 +77,13 @@ export function Sectors() {
         <Block label="Implication" accent>
           <p>
             It is also instructive how the region frames the moment relative to peers.
-            AI startups across MENA raised a record USD 858 million in 2025—22 percent
-            of all regional venture funding, roughly double the prior share—while
-            Saudi Arabia became the region's largest venture market by value at USD
-            1.72 billion. Dubai's edge is therefore not capital volume alone; it is the
-            combination of diffusion, regulatory clarity, and speed to deployment.
+            MENA AI startups raised USD 1.3 billion in the first quarter of 2026
+            alone, with Saudi Arabia taking 51 percent of that total and the UAE 31
+            percent—even as overall regional deal activity fell 41 percent in the
+            first half of 2026 to its weakest level in five years. Dubai's edge is
+            therefore not capital volume alone; it is the combination of diffusion,
+            regulatory clarity, and speed to deployment.
+
           </p>
           <p>
             The lag in slower-moving sectors is not disbelief—it is selectivity. Moving
