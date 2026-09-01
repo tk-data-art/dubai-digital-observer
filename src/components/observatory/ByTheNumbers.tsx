@@ -40,40 +40,42 @@ export function ByTheNumbers() {
             </div>
             <div className="flex flex-col items-center text-center">
               <Donut
-                pct={42}
+                pct={33}
                 label={
                   <>
-                    of large UAE enterprises have <strong className="text-white">actively
-                    deployed AI</strong>, ahead of the regional average
+                    of UAE organisations have appointed a{" "}
+                    <strong className="text-white">Chief AI Officer</strong> —
+                    against 26% globally
                   </>
                 }
               />
               <StatMeta
                 onPanel
-                period="March 2024"
-                geography="UAE, firms with 1,000+ employees"
-                source="IBM Global AI Adoption Index (Morning Consult)"
+                period="June 2026"
+                geography="UAE"
+                source="IBM Institute for Business Value & Dubai Future Foundation"
               />
             </div>
             <div className="flex flex-col items-center text-center">
               <Donut
-                pct={65}
+                pct={89}
                 label={
                   <>
-                    of UAE IT professionals report an{" "}
-                    <strong className="text-white">accelerated AI rollout</strong>{" "}
-                    over the preceding 24 months
+                    of Middle East CEOs are{" "}
+                    <strong className="text-white">embedding AI into core
+                    workflows</strong>, not isolated pilots
                   </>
                 }
               />
               <StatMeta
                 onPanel
-                period="March 2024"
-                geography="UAE"
-                source="IBM Global AI Adoption Index (Morning Consult)"
+                period="June 2026"
+                geography="Middle East"
+                source="IBM CEO Study 2026"
               />
             </div>
           </div>
+
 
           <p className="text-panel-foreground/75 text-[15px] leading-relaxed max-w-[62ch] mb-8">
             … while the macro commitments behind that diffusion are unusually
