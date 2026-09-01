@@ -93,7 +93,7 @@ export function KeyQuestions() {
         >
           <div className="flex items-end justify-center gap-2 h-44">
             {[
-              { label: "Global avg.", v: 8, color: "var(--brand-pale)" },
+              { label: "Rest of region", v: 8, color: "var(--brand-pale)" },
               { label: "Rest of GCC", v: 8.2, color: "var(--brand-pale)" },
               { label: "Saudi Arabia", v: 12.4, color: "var(--brand-soft)" },
               { label: "UAE", v: 13.6, color: "var(--brand)" },
