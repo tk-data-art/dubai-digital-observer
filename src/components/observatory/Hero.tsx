@@ -40,7 +40,7 @@ export function Hero() {
           alt="Dubai's Downtown skyline at dawn seen from a boardroom window, with Burj Khalifa at the centre"
           width={1920}
           height={1080}
-          className="w-full h-[44vh] md:h-[58vh] object-cover"
+          className="w-full h-auto object-contain"
         />
       </div>
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 py-6 text-sm text-muted-foreground flex justify-between">
