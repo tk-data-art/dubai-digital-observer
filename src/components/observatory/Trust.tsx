@@ -111,7 +111,7 @@ export function Trust() {
           number={8}
           title="Dubai's declaratory and delivery layers are well populated; the assurance layer is not yet observable."
           subtitle="Published AI governance instruments relevant to Dubai, by layer and status"
-          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; Dubai Government Media Office, April 2024 and October 2025; DIFC Commissioner of Data Protection"
+          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; UAE AI and Data Authority announcement, June 2026; Dubai Government Media Office, April 2024, October 2025 and February 2026; DIFC Consultation Paper No. 3, 18 June 2026"
           footnotes={
             <div>
               "Data gap" indicates that no published instrument or public register
