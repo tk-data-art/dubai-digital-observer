@@ -16,6 +16,12 @@ const instruments: { group: string; label: string; detail: string; status: strin
   },
   {
     group: "",
+    label: "UAE Artificial Intelligence and Data Authority",
+    detail: "New federal authority approved June 2026 to consolidate AI and data policy across government",
+    status: "Building",
+  },
+  {
+    group: "",
     label: "Regulatory Intelligence ecosystem",
     detail: "Cabinet approved the first integrated ecosystem, including AI-assisted legislative drafting, 14 April 2025",
     status: "Building",
@@ -23,13 +29,19 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "Emirate-level",
     label: "Dubai Universal Blueprint for Artificial Intelligence",
-    detail: "Launched 29 April 2024; projected AED 100bn annual uplift",
+    detail: "Launched 29 April 2024; AED 100bn target contribution, no published progress figure to date",
     status: "In delivery",
   },
   {
     group: "",
     label: "Chief AI Officers across Dubai government entities",
-    detail: "Approved by the Executive Council, October 2025",
+    detail: "Approved by the Executive Council, October 2025; 33% of UAE organisations had a CAIO by June 2026",
+    status: "In delivery",
+  },
+  {
+    group: "",
+    label: "Dubai AI Academy and AI Week 2026",
+    detail: "Second edition held 6–9 April 2026; academy to train 10,000 leaders by 2030, alongside an AED 10bn AI fund",
     status: "In delivery",
   },
   {
@@ -41,7 +53,7 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "Sectoral & data",
     label: "DIFC Data Protection Regulation 10",
-    detail: "Governs personal data processed through autonomous and semi-autonomous systems",
+    detail: "Governs personal data processed through autonomous and semi-autonomous systems; amendments consulted on 18 June 2026",
     status: "In force",
   },
   {
@@ -56,6 +68,7 @@ const instruments: { group: string; label: string; detail: string; status: strin
     detail: "No public register identified",
     status: "Data gap",
   },
+
 ];
 
 export function Trust() {
