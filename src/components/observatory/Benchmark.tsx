@@ -3,12 +3,13 @@ import { SectionHead, Block } from "./Editorial";
 
 export function Benchmark() {
   const peers = [
-    { city: "United Arab Emirates", gov: "12", digital: "9", adoption: "1", note: "1st in MENA on AI readiness" },
-    { city: "Singapore",            gov: "2",  digital: "3", adoption: "2", note: "Sustained top-3 on readiness" },
-    { city: "United States",        gov: "1",  digital: "1", adoption: "—", note: "Leads on foundations and capital" },
-    { city: "United Kingdom",       gov: "5",  digital: "20", adoption: "—", note: "Strong governance, slower diffusion" },
-    { city: "Saudi Arabia",         gov: "≈30", digital: "24", adoption: "—", note: "Largest Gulf VC market in 2025" },
-    { city: "China",                gov: "≈15", digital: "14", adoption: "—", note: "Scale-led, state-directed build-out" },
+    { city: "United Arab Emirates", gov: "1 in MENA", digital: "9", adoption: "1", note: "Leads MENA on government AI readiness" },
+    { city: "Singapore",            gov: "Top 3",  digital: "3", adoption: "2", note: "Sustained top-3 on readiness" },
+    { city: "United States",        gov: "Top 3",  digital: "1", adoption: "—", note: "Leads on foundations and capital" },
+    { city: "United Kingdom",       gov: "Top 10",  digital: "20", adoption: "—", note: "Strong governance, slower diffusion" },
+    { city: "Saudi Arabia",         gov: "Top 40", digital: "24", adoption: "—", note: "51% of MENA AI funding in Q1 2026" },
+    { city: "China",                gov: "Top 20", digital: "14", adoption: "—", note: "Scale-led, state-directed build-out" },
+
   ];
 
   return (
