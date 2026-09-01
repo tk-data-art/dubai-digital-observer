@@ -69,6 +69,11 @@ export function KeyQuestions() {
             share in the GCC—equivalent to more than USD 96 billion. No 2026 revision
             of this projection has been published, so it is reported here as the
             latest available estimate (<em>Exhibit 02</em>).
+          </p>
+        </Block>
+      </div>
+
+
 
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
