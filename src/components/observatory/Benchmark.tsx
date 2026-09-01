@@ -32,13 +32,15 @@ export function Benchmark() {
 
         <Block label="Evidence">
           <p>
-            On institutional measures the position is strong but not first: 12th
-            globally and first in MENA on Oxford Insights' 2024 Government AI
-            Readiness Index, and 9th of 69 economies on IMD's 2025 World Digital
-            Competitiveness Ranking—5th on its future-readiness sub-pillar
-            (<em>Exhibit 07</em>).
+            On institutional measures the position is strong but not first: the UAE
+            remains first in MENA on Oxford Insights' Government AI Readiness Index
+            (2025 edition), and 9th of 69 economies on IMD's 2025 World Digital
+            Competitiveness Ranking—5th on its future-readiness sub-pillar. Its
+            precise 2025 global readiness rank is not restated here pending
+            confirmation from the published index (<em>Exhibit 07</em>).
           </p>
         </Block>
+
       </div>
 
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
