@@ -71,15 +71,17 @@ export function Benchmark() {
       <div className="mx-auto max-w-[1000px] px-6 lg:px-10">
         <ExhibitFrame
           number={7}
-          title="The UAE ranks top-15 on institutional readiness and first on adoption—an unusual combination."
-          subtitle="Global rank on published indices (lower is better); adoption rank from Microsoft diffusion data"
-          source="Oxford Insights Government AI Readiness Index 2024; IMD World Digital Competitiveness Ranking 2025; Microsoft Global AI Diffusion Report Q1 2026"
+          title="The UAE pairs top-10 digital competitiveness with first place on workplace adoption—an unusual combination."
+          subtitle="Position on published indices (lower is better); adoption rank from Microsoft diffusion data"
+          source="Oxford Insights Government AI Readiness Index 2025; IMD World Digital Competitiveness Ranking 2025; Microsoft Global AI Diffusion Report Q1 2026"
           footnotes={
             <div>
-              Ranks marked ≈ are approximate placements read from the published
-              index bands. Workplace-adoption ranks are published only for the
-              leading cohort; other economies are recorded as a data gap (—).
+              Government AI readiness is shown as a published band rather than an
+              exact rank, because the 2025 edition's per-economy positions are not
+              restated here without direct confirmation. Workplace-adoption ranks
+              are published only for the leading cohort; others are a data gap (—).
             </div>
+
           }
         >
           <div className="-mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
