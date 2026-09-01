@@ -55,7 +55,7 @@ export function Sectors() {
           tag="observatory"
           title="Government services, financial services and logistics lead Dubai's sector readiness; construction and creative follow."
           subtitle="Observatory readiness assessment by sector, weighted indicator coverage"
-          source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments, Microsoft Q1 2026 diffusion data and MAGNiTT FY2025 venture data"
+          source="Observatory synthesis of Dubai Universal Blueprint delivery milestones, DIFC regulatory instruments and licence data (2026), Microsoft Q1 2026 diffusion data, IBM/DFF June 2026 governance study and MAGNiTT Q1 2026 venture data"
           footnotes={
             <div>
               Each square denotes one indicator with published supporting evidence
