@@ -86,9 +86,13 @@ export function Trust() {
             The UAE has moved early on the declaratory layer—a national AI charter, a
             strategy with explicit economic targets, and, since April 2025, a
             cabinet-approved regulatory intelligence ecosystem that uses AI in
-            legislative drafting itself. At emirate level, the Universal Blueprint,
-            chief AI officers in every government entity, and the One Million Prompters
-            programme give the agenda institutional owners.
+            legislative drafting itself. In June 2026 it went further, approving a
+            federal Artificial Intelligence and Data Authority to consolidate policy
+            across government. At emirate level, the Universal Blueprint, chief AI
+            officers in every government entity, the Dubai AI Academy launched at AI
+            Week 2026, and the One Million Prompters programme give the agenda
+            institutional owners.
+
           </p>
         </Block>
 
