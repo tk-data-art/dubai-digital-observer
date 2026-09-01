@@ -37,7 +37,7 @@ export function Hero() {
       <div className="w-full bg-ink">
         <img
           src={heroImg}
-          alt="Two executives reviewing AI sector indicators with the Dubai skyline in the background"
+          alt="Dubai's Downtown skyline at dawn seen from a boardroom window, with Burj Khalifa at the centre"
           width={1920}
           height={1080}
           className="w-full h-[44vh] md:h-[58vh] object-cover"
