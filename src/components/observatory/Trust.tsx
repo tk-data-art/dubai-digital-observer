@@ -115,7 +115,7 @@ export function Trust() {
           footnotes={
             <div>
               "Data gap" indicates that no published instrument or public register
-              was identified as of August 2026; it is not a judgement that the
+              was identified as of September 2026; it is not a judgement that the
               capability is absent.
             </div>
           }

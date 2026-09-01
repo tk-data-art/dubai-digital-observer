@@ -50,7 +50,7 @@ export function Methodology() {
           </div>
           <div>
             <dt className="font-semibold text-ink">Data gap</dt>
-            <dd className="text-muted-foreground">No published instrument or register identified as of August 2026.</dd>
+            <dd className="text-muted-foreground">No published instrument or register identified as of September 2026.</dd>
           </div>
         </dl>
       </div>
