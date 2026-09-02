@@ -35,7 +35,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 mt-10 pt-6 border-t border-white/15 flex justify-between text-xs text-panel-foreground/60">
-        <span>© 2026 Dubai Chamber of Digital Economy. Edition 01 · Last updated June 2026.</span>
+        <span>© 2026 Dubai Chamber of Digital Economy. Edition 01 · Evidence checked September 2026.</span>
         <span>An assessment, not a prediction.</span>
       </div>
     </footer>
