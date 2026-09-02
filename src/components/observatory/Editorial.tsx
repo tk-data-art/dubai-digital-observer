@@ -2,12 +2,14 @@ import { type ReactNode } from "react";
 
 type TagKind =
   | "reported"
+  | "projection"
   | "observatory"
   | "gap"
   | "interpretation";
 
 const TAG_COPY: Record<TagKind, string> = {
   reported: "Reported indicator",
+  projection: "Projection",
   observatory: "Observatory assessment",
   gap: "Data gap",
   interpretation: "Interpretation",
@@ -15,6 +17,7 @@ const TAG_COPY: Record<TagKind, string> = {
 
 const TAG_STYLE: Record<TagKind, string> = {
   reported: "border-brand text-brand",
+  projection: "border-brand/50 text-brand/80",
   observatory: "border-ink/45 text-ink/75",
   gap: "border-muted-foreground/50 text-muted-foreground",
   interpretation: "border-ink/25 text-muted-foreground",
@@ -105,16 +108,20 @@ export function SourceNote({
   );
 }
 
-/** Standardised statistic block: value → definition → period / geography / source. */
+/** Standardised statistic block: value → definition → period / geography / population / source. */
 export function StatMeta({
   period,
   geography,
   source,
+  population,
+  status,
   onPanel = false,
 }: {
   period: string;
   geography: string;
   source: string;
+  population?: string;
+  status?: string;
   onPanel?: boolean;
 }) {
   const dim = onPanel ? "text-panel-foreground/55" : "text-muted-foreground";
@@ -129,6 +136,18 @@ export function StatMeta({
         <dt className={`inline font-semibold ${key}`}>Geography: </dt>
         <dd className="inline">{geography}</dd>
       </div>
+      {population && (
+        <div>
+          <dt className={`inline font-semibold ${key}`}>Population: </dt>
+          <dd className="inline">{population}</dd>
+        </div>
+      )}
+      {status && (
+        <div>
+          <dt className={`inline font-semibold ${key}`}>Status: </dt>
+          <dd className="inline">{status}</dd>
+        </div>
+      )}
       <div>
         <dt className={`inline font-semibold ${key}`}>Source: </dt>
         <dd className="inline">{source}</dd>
