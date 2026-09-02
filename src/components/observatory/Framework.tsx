@@ -1,31 +1,31 @@
-import { ExhibitFrame, StackedBar } from "./Exhibits";
+import { ExhibitFrame } from "./Exhibits";
 import { SectionHead, Block, Tag } from "./Editorial";
 
 const rooms = [
   {
     name: "Foundations",
-    pct: 34,
+    band: "Strong",
     blurb: "Compute, connectivity, data estates, regulatory clarity",
     body:
       "The base layer where AI is even possible at scale. Dubai's compute density, sovereign data residency frameworks, and energy strategy decide whether the rest of the agenda is buildable. Where the city has invested early—dedicated AI capacity, the Dubai Data Law, and the DET regulatory sandbox—readiness is high. Where investment lags—particularly in domain-specific data estates—the ceiling drops.",
   },
   {
     name: "Adoption",
-    pct: 31,
+    band: "Strong",
     blurb: "Sector deployment, talent, change capacity, capital",
     body:
       "The diffusion layer. Strong adoption signals come from fintech, logistics, and government services; weaker ones from construction, hospitality back-office, and SMEs outside the free zones. The constraint is rarely technology and almost always change capacity: managers who can redesign work around AI, and capital that funds the year between pilot and P&L impact.",
   },
   {
     name: "Velocity",
-    pct: 23,
+    band: "Distinctive",
     blurb: "Time from policy to deployment, from pilot to production",
     body:
-      "Dubai's distinguishing characteristic. Dubai's delivery cadence is visible in the record: the Universal Blueprint moved from launch in April 2024 to chief AI officers in every government entity by October 2025, and the UAE Cabinet approved AI-assisted legislative drafting in April 2025, before establishing a federal AI and Data Authority in June 2026. Velocity is the compounding advantage—every cycle saved is a cycle that funds the next one—but velocity is also where governance debt accumulates fastest.",
+      "Dubai's distinguishing characteristic. Dubai's delivery cadence is visible in the record: the Universal Blueprint moved from launch in April 2024 to 22 chief AI officers across Dubai government entities by October 2024, and the UAE Cabinet approved AI-assisted legislative drafting in April 2025, before establishing a federal AI and Data Authority in June 2026. Velocity is the compounding advantage—every cycle saved is a cycle that funds the next one—but velocity is also where governance debt accumulates fastest.",
   },
   {
     name: "Stewardship",
-    pct: 12,
+    band: "Least observable",
     blurb: "Trust, ethics, redress, model accountability, IP",
     body:
       "The slowest, most underweighted layer. As AI mediates more decisions, the cost of a single high-profile failure rises—and the institutions that absorb that cost (regulators, courts, auditors) need to mature in step. Stewardship is the room where Dubai's ambition is most exposed, and where deliberate investment now buys disproportionate credibility later.",
@@ -74,18 +74,34 @@ export function Framework() {
           number={3}
           tag="observatory"
           title="Dubai's AI readiness is concentrated in the lower zones of the stack—Foundations and Adoption—with Stewardship lagging."
-          subtitle="Composite readiness portfolio, % share of Observatory indicator weight by zone"
-          source="Observatory framework weighting, informed by the Dubai Universal Blueprint for AI (2024), UAE National AI Strategy 2031 and published 2025–26 index data"
-          footnotes={<div>Weightings are an Observatory judgement across 8 sectors, normalised to 100; they express indicator coverage and evidence strength, not survey responses.</div>}
+          subtitle="Observatory assessment of relative readiness by zone, stated as qualitative bands"
+          source="Observatory framework, mapped from the Dubai Universal Blueprint for AI (April 2024), UAE National AI Strategy 2031, IMD World Digital Competitiveness Ranking 2025 and Microsoft Global AI Diffusion Q1 2026"
+          footnotes={<div>Bands are an Observatory judgement mapped from the cited public indicators. No numeric weighting is published: no dataset measures these zones for Dubai, so a percentage split would imply precision the evidence does not support.</div>}
         >
-          <StackedBar
-            segments={[
-              { label: "Stewardship", sub: "Trust, ethics, redress", value: 12, color: "oklch(0.22 0.05 255)" },
-              { label: "Velocity",    sub: "Pilot-to-production speed", value: 23, color: "oklch(0.35 0.15 260)" },
-              { label: "Adoption",    sub: "Sector deployment, talent, capital", value: 31, color: "oklch(0.5 0.22 263)" },
-              { label: "Foundations", sub: "Compute, data, regulation", value: 34, color: "oklch(0.7 0.14 255)" },
-            ]}
-          />
+          <div className="-mx-6 px-6 overflow-x-auto lg:mx-0 lg:px-0">
+            <table className="w-full min-w-[560px] text-sm">
+              <thead>
+                <tr className="border-b-2 border-ink align-bottom">
+                  <th className="text-left font-semibold py-3 pr-4">Zone</th>
+                  <th className="text-left font-semibold py-3 pr-4 w-44">Observatory band</th>
+                  <th className="text-left font-semibold py-3">Published evidence basis</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rooms.map((r) => (
+                  <tr key={r.name} className="border-b border-rule align-top">
+                    <td className="py-4 pr-4 text-ink">{r.name}</td>
+                    <td className="py-4 pr-4">
+                      <span className="inline-block bg-brand-pale/60 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.09em] leading-none text-ink">
+                        {r.band}
+                      </span>
+                    </td>
+                    <td className="py-4 text-muted-foreground text-[13px] leading-relaxed">{r.blurb}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </ExhibitFrame>
       </div>
 
@@ -104,7 +120,7 @@ export function Framework() {
             <div key={r.name} className="border-l-2 border-brand pl-5">
               <div className="flex flex-wrap items-baseline gap-x-3">
                 <span className="font-serif italic text-xl text-ink">The {r.name}</span>
-                <span className="font-mono text-xs text-brand">{r.pct}% weight</span>
+                <span className="font-mono text-xs text-brand">{r.band}</span>
               </div>
               <div className="text-[13px] text-muted-foreground mt-1">{r.blurb}</div>
               <p className="text-[15px] leading-relaxed text-ink/85 mt-2">{r.body}</p>

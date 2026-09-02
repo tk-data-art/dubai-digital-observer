@@ -18,9 +18,10 @@ export function Methodology() {
           This edition is compiled from published, citable evidence current to
           September 2026: Microsoft's Global AI Diffusion report, Q1 2026 (May
           2026); the IBM Institute for Business Value and Dubai Future Foundation
-          governance study and the IBM CEO Study 2026 (both June 2026); MAGNiTT's
-          Q1 2026 MENA venture data; 2026 reporting on the Stargate UAE build-out;
-          DIFC licence and consultation material from 2026; the Dubai Universal
+          chief AI officer study (July 2025) and the IBM Middle East CEO Study (16 June
+          2026); MAGNiTT's Q1 2026 MENA venture data; OpenAI's Stargate UAE announcement
+          (May 2025) and subsequent 2025 reporting; DIFC's FY2025 results and Data
+          Protection Regulation 10; the Dubai Universal
           Blueprint for Artificial Intelligence and Dubai Economic Agenda D33; the
           UAE National AI Strategy 2031; Oxford Insights' Government AI Readiness
           Index 2025; IMD's World Digital Competitiveness Ranking 2025; and primary
@@ -29,12 +30,13 @@ export function Methodology() {
         </p>
         <p className="text-[15px] leading-relaxed text-ink/85 mt-4">
           Where the most recent primary source predates 2026—principally the
-          AI-to-GDP projection (June 2025) and the AED 100bn Blueprint target
-          (April 2024)—the figure is retained and explicitly labelled with its
+          AI-to-GDP projection for 2031 (June 2025), the AED 100bn Blueprint target
+          (April 2024) and the chief AI officer survey (July 2025)—the figure is retained and explicitly labelled with its
           vintage as the latest available, rather than being updated by inference.
           Where a public indicator does not exist, the Observatory records a{" "}
-          <em>data gap</em> rather than estimating; composite zone weightings and
-          sector scores are explicitly labelled as Observatory judgements. As a{" "}
+          <em>data gap</em> rather than estimating; Observatory judgements are published as qualitative bands rather than numeric
+          scores, and readiness is reported separately from evidence coverage so that a
+          thin public record is not mistaken for low readiness. As a{" "}
           <em>living</em> product, indicators are refreshed quarterly and should be
           read as directional snapshots in time.
         </p>

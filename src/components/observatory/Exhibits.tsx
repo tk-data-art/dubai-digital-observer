@@ -16,7 +16,7 @@ export function ExhibitFrame({
   children: ReactNode;
   source: string;
   footnotes?: ReactNode;
-  tag?: "reported" | "observatory" | "gap" | "interpretation";
+  tag?: "reported" | "projection" | "observatory" | "gap" | "interpretation";
 }) {
   return (
     <figure className="my-14 max-w-4xl mx-auto border-t-2 border-ink pt-5">

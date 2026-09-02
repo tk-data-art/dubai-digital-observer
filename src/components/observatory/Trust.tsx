@@ -35,13 +35,13 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "",
     label: "Chief AI Officers across Dubai government entities",
-    detail: "Approved by the Executive Council, October 2025; 33% of UAE organisations had a CAIO by June 2026",
+    detail: "22 chief AI officers appointed across Dubai government entities, October 2024; 33% of surveyed UAE organisations had a chief AI officer (IBM/Dubai Future Foundation, July 2025)",
     status: "In delivery",
   },
   {
     group: "",
-    label: "Dubai AI Academy and AI Week 2026",
-    detail: "Second edition held 6–9 April 2026; academy to train 10,000 leaders by 2030, alongside an AED 10bn AI fund",
+    label: "Dubai AI Academy",
+    detail: "Dubai AI Academy launched April 2025; announced ambition to train 10,000 leaders by 2030",
     status: "In delivery",
   },
   {
@@ -53,7 +53,7 @@ const instruments: { group: string; label: string; detail: string; status: strin
   {
     group: "Sectoral & data",
     label: "DIFC Data Protection Regulation 10",
-    detail: "Governs personal data processed through autonomous and semi-autonomous systems; amendments consulted on 18 June 2026",
+    detail: "Governs personal data processed through autonomous and semi-autonomous systems; in force since late 2023",
     status: "In force",
   },
   {
@@ -89,8 +89,8 @@ export function Trust() {
             legislative drafting itself. In June 2026 it went further, approving a
             federal Artificial Intelligence and Data Authority to consolidate policy
             across government. At emirate level, the Universal Blueprint, chief AI
-            officers in every government entity, the Dubai AI Academy launched at AI
-            Week 2026, and the One Million Prompters programme give the agenda
+            officers across government entities, the Dubai AI Academy launched in April
+            2025, and the One Million Prompters programme give the agenda
             institutional owners.
 
           </p>
@@ -111,7 +111,7 @@ export function Trust() {
           number={8}
           title="Dubai's declaratory and delivery layers are well populated; the assurance layer is not yet observable."
           subtitle="Published AI governance instruments relevant to Dubai, by layer and status"
-          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; UAE AI and Data Authority announcement, June 2026; Dubai Government Media Office, April 2024, October 2025 and February 2026; DIFC Consultation Paper No. 3, 18 June 2026"
+          source="UAE Legislation portal; UAE Cabinet, 14 April 2025; UAE AI and Data Authority announcement, June 2026; Dubai Government Media Office, April 2024, October 2024, April 2025 and November 2025; DIFC Data Protection Regulation 10; DIFC FY2025 results, February 2026"
           footnotes={
             <div>
               "Data gap" indicates that no published instrument or public register

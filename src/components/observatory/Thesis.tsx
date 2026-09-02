@@ -33,13 +33,13 @@ export function Thesis() {
           The strategic question, then, is not whether AI will mediate Dubai's growth,
           but whether Dubai will use it to <em>deepen</em> and <em>scale</em> its
           competitive position—or allow external platforms to define that layer on its
-          behalf. The stakes are considerable. Independent estimates suggest agentic
-          and generative AI could mediate{" "}
+          behalf. The stakes are set out in the UAE's own published expectations: a PwC estimate
+          carried by Emirates NBD Research in June 2025 projects AI contributing{" "}
           <mark className="bg-brand-pale/60 px-1">
-            USD 4.4 trillion of global productivity annually by 2030
+            13.6% of UAE GDP, more than USD 96bn, by 2031
           </mark>
-          , underscoring how quickly the operating system of urban economies must be
-          rebuilt—especially in a city that has historically grown by being early.
+          —a projection rather than a measured outcome, but one that indicates how
+          quickly the operating system of the economy is expected to be rebuilt.
         </p>
         <p>
           Dubai, after all, is not a market in which growth simply arrives fully
