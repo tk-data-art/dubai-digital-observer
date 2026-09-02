@@ -83,6 +83,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Dubai AI Economy Readiness Observatory" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      {
+        name: "google-site-verification",
+        content: "ywBQcgnFkgX5jqTOaXjUh4UBNwVde_AgDg1tbtcmeNo",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
