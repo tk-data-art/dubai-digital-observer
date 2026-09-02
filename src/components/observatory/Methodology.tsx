@@ -11,9 +11,9 @@ export function Methodology() {
           <Tag kind="observatory" />
           <Tag kind="gap" />
         </div>
-        <h3 className="font-serif text-xl md:text-2xl text-ink mb-4 leading-snug">
+        <h2 className="font-serif text-xl md:text-2xl text-ink mb-4 leading-snug">
           About the Observatory
-        </h3>
+        </h2>
         <p className="text-[15px] leading-relaxed text-ink/85">
           This edition is compiled from published, citable evidence current to
           September 2026: Microsoft's Global AI Diffusion report, Q1 2026 (May
