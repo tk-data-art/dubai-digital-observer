@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Dubai AI Economy Readiness Observatory" },
       { name: "description", content: "Dubai AI Economy Readiness Observatory" },
       { name: "author", content: "Dubai Chamber of Digital Economy" },
       { property: "og:site_name", content: "Dubai AI Economy Readiness Observatory" },

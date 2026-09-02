@@ -27,7 +27,7 @@ export function Footer() {
             data appendix.
           </p>
           <a
-            href="#"
+            href="mailto:observatory@dubaichamberdigital.ae?subject=Subscribe%20to%20the%20Dubai%20AI%20Economy%20Readiness%20Observatory"
             className="mt-4 inline-block border border-brand-pale/60 px-4 py-2 text-sm hover:bg-brand hover:border-brand"
           >
             Subscribe to the Observatory →
