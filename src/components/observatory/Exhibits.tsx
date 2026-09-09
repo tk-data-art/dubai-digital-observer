@@ -44,7 +44,7 @@ export function ExhibitFrame({
           </div>
         )}
         <div className="pt-3 font-serif italic text-foreground">
-          Dubai Chamber of Digital Economy
+          DUBAI AI ECONOMY READINESS OBSERVATORY
         </div>
       </figcaption>
     </figure>

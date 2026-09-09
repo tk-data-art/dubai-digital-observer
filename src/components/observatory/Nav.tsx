@@ -30,8 +30,8 @@ export function Nav() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 flex items-center justify-between h-14">
         <a href="#top" className="flex items-center gap-3">
           <span className="font-serif text-xl leading-none text-ink">
-            Dubai Chamber<span className="block text-[11px] tracking-wider uppercase font-sans font-semibold text-muted-foreground mt-1">
-              of Digital Economy
+            AI Economy<span className="block text-[11px] tracking-wider uppercase font-sans font-semibold text-muted-foreground mt-1">
+              Observatory
             </span>
           </span>
         </a>

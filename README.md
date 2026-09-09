@@ -9,7 +9,7 @@ A flagship, living research product tracking Dubai's readiness to scale AI acros
 
 ## Overview
 
-This is a single-page, long-form digital Observatory built for the Dubai Chamber of Digital Economy. It presents evidence-backed assessments, interactive exhibits, and a McKinsey-style editorial narrative around Dubai's AI economy readiness.
+This is an independent, single-page, long-form digital Observatory. It presents evidence-backed assessments, interactive exhibits, and an editorial narrative around Dubai's AI economy readiness.
 
 The site is designed as a **living product** — intended for quarterly refreshes as new indicators, policies, and market data become available.
 

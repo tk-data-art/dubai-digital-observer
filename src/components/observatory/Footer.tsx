@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-panel text-panel-foreground py-12">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 grid md:grid-cols-3 gap-10">
         <div>
-          <div className="font-serif text-2xl">Dubai Chamber<br /><span className="italic text-base">of Digital Economy</span></div>
+          <div className="font-serif text-2xl">Dubai AI Economy Readiness Observatory<br /><span className="italic text-base">Independent Research · Edition 01 · Evidence checked September 2026</span></div>
           <p className="mt-4 text-sm text-panel-foreground/75 max-w-xs">
             The Observatory is a living research product. Indicators are
             refreshed quarterly; the next edition is scheduled for November 2026.
@@ -23,19 +23,16 @@ export function Footer() {
         <div>
           <div className="eyebrow text-panel-foreground/60 mb-3">Stay current</div>
           <p className="text-sm text-panel-foreground/80">
-            Receive each quarterly edition, indicator updates, and the underlying
-            data appendix.
+            Receive quarterly editions, indicator updates, and future research from
+            the Observatory.
           </p>
-          <a
-            href="mailto:observatory@dubaichamberdigital.ae?subject=Subscribe%20to%20the%20Dubai%20AI%20Economy%20Readiness%20Observatory"
-            className="mt-4 inline-block border border-brand-pale/60 px-4 py-2 text-sm hover:bg-brand hover:border-brand"
-          >
-            Subscribe to the Observatory →
-          </a>
+          <p className="mt-4 text-sm text-panel-foreground/80">
+            The next edition is scheduled for November 2026.
+          </p>
         </div>
       </div>
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 mt-10 pt-6 border-t border-white/15 flex justify-between text-xs text-panel-foreground/60">
-        <span>© 2026 Dubai Chamber of Digital Economy. Edition 01 · Evidence checked September 2026.</span>
+        <span>© 2026 Dubai AI Economy Readiness Observatory · An independent research project.</span>
         <span>An assessment, not a prediction.</span>
       </div>
     </footer>
