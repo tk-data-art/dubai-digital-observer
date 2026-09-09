@@ -7,13 +7,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-14 mb-10">
           <div>
             <div className="font-serif text-2xl text-ink leading-tight">
-              Dubai Chamber<br />
-              <span className="text-base text-muted-foreground italic">of Digital Economy</span>
+              INDEPENDENT RESEARCH<br />
+              <span className="text-base text-muted-foreground italic">AI ECONOMY OBSERVATORY</span>
             </div>
           </div>
           <div>
             <div className="flex flex-wrap items-center gap-3 mb-5">
-              <p className="eyebrow text-brand text-[0.68rem] tracking-[0.14em]">Digital Economy Practice</p>
+              <p className="eyebrow text-brand text-[0.68rem] tracking-[0.14em]">Strategic Intelligence Practice</p>
               <span className="hidden sm:inline h-px w-8 bg-rule" />
               <p className="eyebrow text-[0.68rem] tracking-[0.14em] text-muted-foreground">Edition 01</p>
             </div>
@@ -26,9 +26,8 @@ export function Hero() {
               into compounding economic value.
             </p>
             <p className="mt-6 border-l-2 border-rule pl-4 text-[13px] leading-relaxed italic text-muted-foreground max-w-2xl">
-              This edition is a collaborative observation drawing on Dubai-wide sector
-              indicators, executive interviews, and global benchmarks—representing the
-              ongoing assessment of the Dubai Chamber of Digital Economy.
+              This edition is an independent research observation compiled from published
+              Dubai-wide sector indicators, global benchmarks, and cited public evidence.
             </p>
           </div>
 

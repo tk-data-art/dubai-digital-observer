@@ -156,7 +156,7 @@ export function ByTheNumbers() {
                 this panel.
               </span>
             </div>
-            <div className="mt-3 font-serif italic">Dubai Chamber of Digital Economy</div>
+            <div className="mt-3 font-serif italic">DUBAI AI ECONOMY READINESS OBSERVATORY</div>
           </div>
         </div>
       </div>
